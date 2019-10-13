@@ -1,32 +1,93 @@
 # Demos instructions
 
-## TODOs
+## Demo 1 - Let’s Create a VM 
 
-- [ ] Create Nested template with a Key Vault and webApp
-- [ ] Create Deployment to deploy in a Scale sets
-- [ ] Create Azure CLI script to create a VM into a scale set
-- [ ] Image in the Share Image Gallery of TailWind Trader FrontEnd
+- From Portal Azure Dashboard/ home
+- Click +, and type "Virtual machine scale set", then click the button create.
+- Explains a few things like the fact that you can use YOUR custom golden images...
+- Magic of Ignite, you already have a scale set create.
+- Switch to the Browser Tab: Scale sets Resource Group
+- Explain the resources (some are missing because if a fake right now)
+- Click on Virtual machine scale set
+- Show the metrics (CPU, Network, etc.)
+- At the top of left panel type "Scaling" in the search bar. 
+    * Explain that little trick
+    * Click on Scaling
+- Explain how easy it is to scale MOVE THE CURSOR
+- Click on the AutoScale 
+- Provide some scenario scale Up by on number of item in a queue, or CPU...
+- Explain that it's also very important to think about the scale down and cooldown.
+- Don't save anything.
 
+Now Let's see more details about the two VMs are suppose to have.
 
-## Pre-demo
+- Still from the scale set, click Instance from the left panel
+- Here are our 2 VMS, click on one.
+- Show again how that a VM like they know CPU, Memory, etc....
 
-- Install VsCode Remote extenstion:  https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack
-- Deploy VM Scale Set (from GitHUb button)
-- Deploy WebApp Version (from GitHUb button)
-- 
+Let's now connect to this VM
 
+- Click on Connect
+- copy into the clipboard the `ssh username@000.000.000.000` display in the right panel.
 
-## Let's Create a VM
+This time to show that great extension we mention previously.
 
-- Show in portal
-- show script
-- Since already in VsCode Remote connect using Remote extension
+- Switch to VSCode, with the Azure CLI Code
+- Mention that you showed how to create the VM and scale set using the portal but that it's of course possible to create it using ARM template or simple Azure CLI command like this one.
 
+Let's show some Details about the Extensions in VSCode
+- Open the Extension menu, type Remote to display all the remote option 
 
+Now let's connect to the VM
 
-## Securing the app with Azure Key Vault
+- Click the lower corner of Code the **><**
+- Select *Remote-SSH: Connect to Host...* option
+- Paste the clipboard
+- enter your passphrase
 
+Have some fun the the VM. When it will be the real tailwind VM the app should be available from the root "/"
 
+- Exit 
+- Disconnect shh
 
+Demo 1 is done, let's do demo 1.5.
 
-## Adding a Phone App with Xamarin
+## Demo 2 - Plan B: PaaS - WebApp
+
+Now it's time to introduce the PaaS setup. Some people prefer VM other will embrace the PaaS and go VMsless
+
+- Switch to the Browser Tab: PaaS Resource Group
+- Show the different resources (avoid talking about Key vault)
+- Click on App Service
+- The the top panel the information available 
+    * Switch to the Browser Tab: Tailwind traders website momentarily to show the website
+- Show the metrics, Backup, and all other create "built-in" feature of PaaS
+- At the top of left panel type "Scale" in the search bar. 
+    * Explain difference between Scale Up and scale out
+    * Click on scale out
+- Explain how easy it is to scale MOVE THE CURSOR
+- Click on the AutoScale 
+- Once more quick recap of some scenario to auto-scale 
+- Don't save anything.
+- Open the Configuration just saying that this is you can put setting, configuration and stuff... stay brief, we will come back.
+
+Demo 1 done. Back to slide.
+
+## Demo 3 - Securing the app with Azure Key Vault
+
+- From the portal, back to tab with the Configuration open
+- Show a "old way" to do by showing the CosmoDB connection String **use the ZOOM**
+- Now show the SQLConnectionString
+
+Let's explain where it come from. See Before that talk you already created a Key Vaul. 
+
+- Switch to Browser Tab: Key Vault
+- Creating one is super simple `az keyvault create`, or a few textbox from the portal.
+- Open Show the button to add secret
+- From the left panel click on Secret, and click again.
+- Provide information about where the URL come from, show the real connectionstring
+- Explains the how you could do a ne version or the and expiration date.
+
+## Demo 4 - Quick look at the Tailwind Traders App
+
+(coming soon...)
