@@ -107,17 +107,17 @@ Detailed explanations of each demonstration associated with this presentation ca
 
 | Demo 	                                    | Minutes | Video
 --------------------------------------------|---------|-----------------
-|  [1 - Let’s Create a VM ](demos/demo-instructions.md#demo-1---logic-app-demo)            | ?       | [Link]()
-|  [2 - Alternative PaaS - WebApp](demos/demo-instructions.md#demo-2---javascript-function-demo)  | ?       | [Link]()
-|  [3 - Securing the app with Azure Key Vault](demos/demo-instructions.md#demo-3---deploying-from-github-demo) | ?       | [Link]()
-|  [4 - Quick look at the Tailwind Traders App](demos/demo-instructions.md#demo-3---deploying-from-github-demo) | ?       | [Link]()
+|  [1 - Let’s Create a VM ](demos/demo-instructions.md#demo-1---lets-create-a-vm)            | ?       | [Link]()
+|  [2 - Alternative PaaS - WebApp](demos/demo-instructions.md#demo-2---plan-b-paas---webapp)  | ?       | [Link]()
+|  [3 - Securing the app with Azure Key Vault](demos/demo-instructions.md#demo-3---securing-the-app-with-azure-key-vault) | ?       | [Link]()
+|  [4 - Quick look at the Tailwind Traders App](demos/demo-instructions.md#demo-4---quick-look-at-the-tailwind-traders-app) | ?       | [Link]()
 
 ## Become a Presenter
 
-To become a certified presenter, contact [scalablecontent@microsoft.com](mailto:scalablecontent@microsoft.com). In your email please include:
+To become a certified presenter, contact [learningpathmanager@microsoft.com](mailto:learningpathmanager@microsoft.com). In your email please include:
 
 - Complete name:
-- The code of this presentation: ops40
+- The code of this presentation: apps10
 - Link (ex: unlisted YouTube video) to a video of you presenting (~10 minutes). 
   > It doesn't need to be this content, the important is to show your presenter skills
 
