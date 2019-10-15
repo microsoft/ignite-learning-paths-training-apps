@@ -29,18 +29,6 @@ code.
 - [Full-length recording of presentation](https://web.microsoftstream.com/video/2d257bd5-a028-4a3b-81fe-3f45455eaffb)
 - [Full-length recording of presentation - Director Cut](https://youtu.be/0kGGhoEB-48)
 - [Demo Instructions](https://github.com/microsoft/ignite-learning-paths/tree/master/apps/apps30)
-  
-
-## Become a Presenter
-
-To become a certified presenter, contact [scalablecontent@microsoft.com](mailto:scalablecontent@microsoft.com). In your email please include:
-
-- Complete name:
-- The code of this presentation: mod10
-- Link (ex: unlisted YouTube video) to a video of you presenting (~10 minutes). 
-  > It doesn't need to be this content, the important is to show your presenter skills
-
-A mentor will get back to you with the information on the process.
 
 ## Get Started
 
@@ -93,6 +81,16 @@ Detailed explanations of each demonstration associated with this presentation ca
 |  [Cosmos DB DEMO]()| 
 
 
+## Become a Presenter
+
+To become a certified presenter, contact [scalablecontent@microsoft.com](mailto:scalablecontent@microsoft.com). In your email please include:
+
+- Complete name:
+- The code of this presentation: mod10
+- Link (ex: unlisted YouTube video) to a video of you presenting (~10 minutes). 
+  > It doesn't need to be this content, the important is to show your presenter skills
+
+A mentor will get back to you with the information on the process.
 
 ## Certified Presenters
 
