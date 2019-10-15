@@ -48,7 +48,7 @@ This training repository is divided in to the following sections:
 
 | [Slides](#slides) | [Demos](demos/demo-instructions.md) | [Deployment](deployment/readme.md) | 
 |-------------------|---------------------------|--------------------------------------
-| 42 slides - 25 minutes, | 4 demos - 20 minutes, | 1 automated deployment
+| 39 slides, | 3 demos | 1 automated deployment
 
  [Full-length video can be viewed here (Coming Soon..)](https://coming.soon).
 
@@ -56,26 +56,29 @@ This training repository is divided in to the following sections:
 
 The slides are divided in five sections:
 
- Section                    | Slides           | Notes
-----------------------------|---------------   |------
-Introduction                | 1-9              | There more here because it's the first talk of the Learning Path
-Deployment Tools            | 10-16            | 
-Deployment Options          | 17-23, 24*, 25*   | 
-Basic Security feature      | 26-29, 30*, 31-33 |
-Xamarin                     | 34-35, 36*,       | 
+ Section                    | Slides        | Notes
+----------------------------|---------------|------
+What's Important to Tailwind Traders   6-7   | There more here because it's the first talk of the Learning Path
+Choosing a Data Storage Approach | 8-15   | 
+Benefits of storing files in Azure Blob Storage | 16-21  | 
+Moving to SQL Server in the Cloud    | 22-25  | 
+Securely Storing Application Secrets | 26-27  | 
+Migrating from Mongo DB to Cosmos DB | 30-33  | 
 
-*slide demo
 
 ### Timing
 
 | Time        | Description 
 --------------|-------------
-0:00 - 5:00   | Intro to the session, app 
-5:00 - 15:00  | Tools for Cloud Development – VS, VSCode, Azure CLI, Terminal, ARM 
-15:00 - 20:00 | Options for deployment - VMs/Scale Sets, ACI/AKS, Web Apps, Azure Blob Static Websites  
-20:00 - 35:00 | **Demos** – creating a VM, remote options, deploying to VM scale sets and Web app for Linux  
-35:00 - 40:00 | **Demo** - Securing the app with Azure Key Vault 
-40:00 - 45:00 | **Demo** - Adding a Phone App with Xamarin 
+0:00 - 5:00   | Intro to the session 
+5:00 - 15:00  | What's Important to Tailwind Traders
+15:00 - 20:00 | Benefits of storing files in Azure Blob Storage
+40:00 - 45:00 | **DEMO**
+20:00 - 35:00 | Moving to SQL Server in the Cloud 
+35:00 - 40:00 | Securely Storing Application Secrets
+40:00 - 45:00 | **DEMO**
+40:00 - 45:00 | Migrating from Mongo DB to Cosmos DB
+40:00 - 45:00 | **DEMO**
 
 ## Demos
 
@@ -83,11 +86,11 @@ Xamarin                     | 34-35, 36*,       |
 
 Detailed explanations of each demonstration associated with this presentation can be found in this section. There are 3 "live from stage" technical demonstrations that utilize a number of tools both in and out of Azure. [You can get a high level overview of the tools and how we will be using them here](demos/demo-instructions.md).
 
-| Demo 	                                    | Minutes | Video
---------------------------------------------|---------|-----------------
-|  [DEMO 1]()|| [Link]()
-|  [DEMO 2]()|| [Link]()
-|  [DEMO 3]()|| [Link]()
+| Demo 	                                    | Minutes 
+--------------------------------------------|---------
+|  [Blob Storage Demo]()|
+|  [Key Vault Demo]()| 
+|  [Cosmos DB DEMO]()| 
 
 
 
