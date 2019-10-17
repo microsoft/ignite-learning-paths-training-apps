@@ -54,13 +54,13 @@ The slides are divided in five sections:
 | Time          | Description                                     |
 | ------------- | ----------------------------------------------- |
 | 0:00 - 5:00   | Intro to the session                            |
-| 5:00 - 15:00  | What's Important to Tailwind Traders            |
-| 15:00 - 20:00 | Benefits of storing files in Azure Blob Storage |
-| 40:00 - 45:00 | **DEMO**                                        |
-| 20:00 - 35:00 | Moving to SQL Server in the Cloud               |
-| 35:00 - 40:00 | Securely Storing Application Secrets            |
-| 40:00 - 45:00 | **DEMO**                                        |
-| 40:00 - 45:00 | Migrating from Mongo DB to Cosmos DB            |
+| 5:00 - 10:00  | What's Important to Tailwind Traders            |
+| 10:00 - 15:00 | Benefits of storing files in Azure Blob Storage |
+| 15:00 - 20:00 | **DEMO**                                        |
+| 20:00 - 25:00 | Moving to SQL Server in the Cloud               |
+| 25:00 - 30:00 | Securely Storing Application Secrets            |
+| 30:00 - 35:00 | **DEMO**                                        |
+| 35:00 - 40:00 | Migrating from Mongo DB to Cosmos DB            |
 | 40:00 - 45:00 | **DEMO**                                        |
 
 ## Demos
