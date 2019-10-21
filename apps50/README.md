@@ -31,7 +31,7 @@ code.
 - [Demo Guide Index](./demo-scripts/demo-guide.md)
 
 
-## Become a Presenter
+## Become a Certified Presenter
 
 To become a *Trained Presenters*, contact [scalablecontent@microsoft.com](mailto:scalablecontent@microsoft.com). In your email please include:
 
