@@ -1,1 +1,1 @@
-# Managing Delivery of Your App via DevOps
+# APPS40: Consolidating Infrastructure with Azure Kubernetes Service
