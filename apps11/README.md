@@ -1,3 +1,3 @@
-# APPS11
+# APPS11 : Azure and the command line – options, tips and tricks
 
-## THeater talk
+(15 Min Theater Session)
