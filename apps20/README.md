@@ -53,15 +53,22 @@ The slides are divided in five sections:
 
 | Time          | Description                                     |
 | ------------- | ----------------------------------------------- |
-| 0:00 - 5:00   | Intro to the session                            |
-| 5:00 - 10:00  | What's Important to Tailwind Traders            |
-| 10:00 - 15:00 | Benefits of storing files in Azure Blob Storage |
-| 15:00 - 20:00 | **DEMO**                                        |
-| 20:00 - 25:00 | Moving to SQL Server in the Cloud               |
-| 25:00 - 30:00 | Securely Storing Application Secrets            |
-| 30:00 - 35:00 | **DEMO**                                        |
-| 35:00 - 40:00 | Migrating from Mongo DB to Cosmos DB            |
-| 40:00 - 45:00 | **DEMO**                                        |
+| 0:00 - 2:00   | Intro to the session                            |
+| 2:00 - 10:00  | What's Important to Tailwind Traders            |
+| 10:00 - 18:00 | Benefits of storing files in Azure Blob Storage |
+| 18:00 - 24:00 | **DEMO**                                        |
+| 24:00 - 28:00 | Moving to SQL Server in the Cloud               |
+| 28:00 - 30:00 | **DEMO**                                        |
+| 30:00 - 33:00 | Securely Storing Application Secrets            |
+| 33:00 - 35:00 | **DEMO**                                        |
+| 35:00 - 37:00 | Migrating from Mongo DB to Cosmos DB            |
+| 37:00 - 41:00 | **DEMO**                                        |
+| 41:00 - 45:00 | Resources and Recap                             |
+
+## Required Software
+
+- Install [Visual Studio Code](https://code.visualstudio.com/)
+- Install [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/)
 
 ## Demos
 
@@ -69,18 +76,30 @@ The slides are divided in five sections:
 
 Detailed explanations of each demonstration associated with this presentation can be found in this section. There are 3 "live from stage" technical demonstrations that utilize a number of tools both in and out of Azure. [You can get a high level overview of the tools and how we will be using them here](demos.md).
 
-| Demo                  | Minutes |
-| --------------------- | ------- |
-| [Blob Storage Demo]() |
-| [Key Vault Demo]()    |
-| [Cosmos DB DEMO]()    |
+| Demo                                            |
+| ----------------------------------------------- |
+| [Blob Storage Demo](demos.md#blob-storage-demo) |
+| [SQL Azure Demo](demos.md#SQL-Azure-Demo)       |
+| [Key Vault Demo](demos.md#key-vault-Demo)       |
+| [Cosmos DB DEMO](demos.md#cosmos-db-Demo)       |
+
+## Suggested setup to present
+
+> You should have a few things open a ready:
+
+- PowerPoint
+- Browser Tab: Portal Azure Dashboard/ home
+- Browser Tab: Tailwind traders website
+- Browser Tab: Cosmos DB
+- Browser Tab: Key Vault
+- [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer)
 
 ## Become a Presenter
 
 To become a certified presenter, contact [scalablecontent@microsoft.com](mailto:scalablecontent@microsoft.com). In your email please include:
 
 - Complete name:
-- The code of this presentation: mod10
+- The code of this presentation: apps20
 - Link (ex: unlisted YouTube video) to a video of you presenting (~10 minutes).
   > It doesn't need to be this content, the important is to show your presenter skills
 
@@ -92,9 +111,13 @@ A mentor will get back to you with the information on the process.
 
 <table>
 <tr>
-    <td align="center"><a href="http://cloud5mins.com/">
+    <td align="center"><a href="https://github.com/cecilphillip">
         <img src="https://avatars2.githubusercontent.com/u/350882?s=460&v=4" width="100px;" alt="Cecil Phillip"/><br />
         <sub><b>Cecil Phillip</b></sub></a><br />
+    </td>
+    <td align="center"><a href="https://github.com/lbugnion">
+        <img src="https://avatars1.githubusercontent.com/u/4922457?s=400&v=4" width="100px;" alt="Laurent Bugnion"/><br />
+        <sub><b>Laurent Bugnion</b></sub></a><br />
     </td>
 </tr></table>
 
