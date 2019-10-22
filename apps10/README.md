@@ -112,9 +112,9 @@ Detailed explanations of each demonstration associated with this presentation ca
 |  [3 - Securing the app with Azure Key Vault](demos/demo-instructions.md#demo-3---securing-the-app-with-azure-key-vault) | ?       | [Link]()
 |  [4 - Quick look at the Tailwind Traders App](demos/demo-instructions.md#demo-4---quick-look-at-the-tailwind-traders-app) | ?       | [Link]()
 
-## Become a Certified Presenter
+## Become a Trained Presenter
 
-To become a certified presenter, contact [learningpathmanager@microsoft.com](mailto:learningpathmanager@microsoft.com). In your email please include:
+To become a trained presenter, contact [learningpathmanager@microsoft.com](mailto:learningpathmanager@microsoft.com). In your email please include:
 
 - Complete name:
 - The code of this presentation: apps10
@@ -123,7 +123,7 @@ To become a certified presenter, contact [learningpathmanager@microsoft.com](mai
 
 A mentor will get back to you with the information on the process.
 
-## Certified Presenters
+## Trained Presenters
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 

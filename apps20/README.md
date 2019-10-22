@@ -96,7 +96,7 @@ Detailed explanations of each demonstration associated with this presentation ca
 
 ## Become a Presenter
 
-To become a certified presenter, contact [scalablecontent@microsoft.com](mailto:scalablecontent@microsoft.com). In your email please include:
+To become a trained presenter, contact [scalablecontent@microsoft.com](mailto:scalablecontent@microsoft.com). In your email please include:
 
 - Complete name:
 - The code of this presentation: apps20
@@ -105,7 +105,7 @@ To become a certified presenter, contact [scalablecontent@microsoft.com](mailto:
 
 A mentor will get back to you with the information on the process.
 
-## Certified Presenters
+## Trained Presenters
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 
