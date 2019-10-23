@@ -1,8 +1,5 @@
 # APPS40: Consolidating Infrastructure with Azure Kubernetes Service
  
-# Modernizing Your Application with Containers
-
-
 ## Session Abstract
 Kubernetes is the open source container orchestration system that supercharges applications with scaling and reliability and unlocks advanced features, like A/B testing, Blue/Green deployments, canary builds, and dead-simple rollbacks.
 
