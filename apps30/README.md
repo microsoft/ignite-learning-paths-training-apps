@@ -7,7 +7,7 @@ Tailwind Traders’ recently moved one of its core applications from a virtual m
 
 In this session, you’ll learn how to manage containers for deployment, options for container registries, and ways to manage and scale deployed containers. You’ll also learn how Tailwind Traders uses Azure Key Vault service to store application secrets and make it easier for their applications to securely access business critical data.
 
-The session [Ignite Learning Paths - MOD10](https://github.com/microsoft/ignite-learning-paths/tree/master/mod/mod10).
+The session [Ignite Learning Paths - APPS30](https://github.com/microsoft/ignite-learning-paths/tree/master/apps/apps30).
 
 ## How To Use
 
@@ -26,7 +26,7 @@ code.
 ## Assets in Train-The-Trainer kit
 
 - This guide
-- [PowerPoint presentation]()
+- [PowerPoint presentation](https://microsoft.sharepoint.com/:p:/t/CloudDevAdvocacy/EZgbozkV3o9Cg7XGPH9TVQQBoE38hR_dyvLR90UjDsfTPg?e=Z3PsGH)
 - [Full-length recording of presentation](https://web.microsoftstream.com/video/2d257bd5-a028-4a3b-81fe-3f45455eaffb)
 - [Full-length recording of presentation - Director Cut](https://youtu.be/0kGGhoEB-48)
 - [Demo Instructions](https://github.com/microsoft/ignite-learning-paths/tree/master/apps/apps30)
@@ -37,7 +37,7 @@ code.
 To become a trained presenter, contact [scalablecontent@microsoft.com](mailto:scalablecontent@microsoft.com). In your email please include:
 
 - Complete name:
-- The code of this presentation: mod10
+- The code of this presentation: apps30
 - Link (ex: unlisted YouTube video) to a video of you presenting (~10 minutes). 
   > It doesn't need to be this content, the important is to show your presenter skills
 
