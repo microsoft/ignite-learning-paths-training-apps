@@ -1,0 +1,37 @@
+DEMO LIVE EXAMPLE FILE - for demo live notes:
+
+az group create --subscription "Ignite The Tour" --name 001igniteapps30 --location eastus
+
+az network vnet create --name 001igniteapps30vnet --subscription  "Ignite The Tour" --resource-group 001igniteapps30    --subnet-name default
+
+az acr create --resource-group 001igniteapps30 --name 001igniteapps30acr --sku Basic --subscription  "Ignite The Tour" --admin-enabled true
+
+
+mkdir igniteapps30
+git clone https://github.com/anthonychu/TailwindTraders-Website.git igniteapps30/ 
+cd igniteapps30/Source/Tailwind.Traders.Web
+git checkout monolith 
+
+az appservice plan create --name 001igniteapps30plan --resource-group 001igniteapps30 --sku B1 --is-linux --subscription  "Ignite The Tour"
+
+az acr build --subscription  "Ignite The Tour" --registry 001igniteapps30acr --image twtapp:v1 .
+
+adminUser=twtadmin
+adminPassword=twtapps30pD
+
+
+MongoConnectionString=
+mongodb://001apps30twtnosql:rsYKqMboHooQSIISeozNE8ur1sHUV4Jx3L1CPcTkbaCXSLMEX4HOfmQ18ezxkmKO62EylPBAdJH6i8eEz2qbzw==@001apps30twtnosql.documents.azure.com:10255/?ssl=true&replicaSet=globaldb
+
+SqlConnectionString=
+"Server=tcp:001apps30twtsql.database.windows.net,1433;Database=tailwind;User ID=twtadmin;Password=twtapps30pD;Encrypt=true;Connection Timeout=30;"
+
+              
+
+
+apiUrl=/api/v1 
+ApiUrlShoppingCart=/api/v1 
+"name": "productImagesUrl",               "value": "https://raw.githubusercontent.com/microsoft/TailwindTraders-Backend/master/Deploy/tailwindtraders-images/product-detail"
+
+MongoConnectionString mongodb://apps30twtnosql:noEfzXJZI6Mct1wmxnBHNQxnPVLXl5dpoFiNdUTEEN7y2rFFrdnfq4weNqVExp9emAgNng0Dyolz1aTSISqjZw==@apps30twtnosql.documents.azure.com:10255/?ssl=true&replicaSet=globaldb
+SqlConnectionString = Server=tcp:apps30twtsql.database.windows.net,1433;Initial Catalog=tailwind;Persist Security Info=False;User ID=twtadmin;Password=twtapps30pD;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;

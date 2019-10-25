@@ -105,7 +105,7 @@ To become a certified presenter, contact [scalablecontent@microsoft.com](mailto:
 
 A mentor will get back to you with the information on the process.
 
-## Certified Presenters
+## Trained Presenters
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 
