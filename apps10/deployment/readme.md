@@ -1,13 +1,23 @@
 # Deployments
 
-Before we start presenting we want to have those things already deployed:
+## Required Software
+
+1. Install [Visual Studio Code](https://code.visualstudio.com/) 
+1. Install the [Remote extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) for VSCOde. 
+1. You will need [SSH Client](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse) installed. 
+    * If you need a set of keys, open a terminal and execute the command `ssh-keygen -t rsa -b 2048` remember where you put the information (usually C:\Users\<USERNAME>/.ssh/ ) and your passphrase (aka password). 
+1.  For sharing Android device: [Vysor](http://www.vysor.io/)
+
+
+There is multiple things to deploy. Before we start presenting we want to have those things already deployed:
 
 1. The Tailwind Traders solution full PaaS
 2. The Tailwind Traders solution Frontend in a ScaleSet VM and backend as Services
 3. Images of Tailwind Traders VM in a Shared Gallery
 4. A Key Vault with a secret containing the SQL database connection
+5. Mobile App
+6. Connect/ Share mobile screen on laptop
 
-> 🚩Note: Right now there is a lot of manual steps. This will be updated. 
 
 ## 1 - The Tailwind Traders solution full PaaS
 
@@ -92,7 +102,7 @@ Once the key vault is created we will add a secret, and populate it.
 - Restart the App Service, and test if it's working. It should.  
 
 
-## Mobile App
+## 5- Mobile App
 
 > The mobile app currently is only available for phones. Devices such as Tablets (iPad) will not work
 
@@ -103,6 +113,19 @@ Once the key vault is created we will add a secret, and populate it.
 - Update Product Service API URL with url of deployed Tailwind Traders website as done in [1 - The Tailwind Traders solution full PaaS](#1---the-tailwind-traders-solution-full-paas).
 - Save your changes with the "Save" button at the bottom.
 - Can't access the app after troubleshooting? Contact Matt Soucoup for assistance
+
+## 6- Connect/ Share mobile screen on laptop
+
+- Open Vysor. 
+- Connect your mobile to your laptop using a USB cable. 
+- For Android:
+    - Your phone must be in developer mode.
+    - Open the Settings app. Select System.
+    - Scroll to the bottom and select About phone.
+    - Scroll to the bottom and tap Build number 7 times.
+    - Return to the previous screen to find Developer options near the bottom.
+    - Set USB debugging to True (in Debugging section)
+- Accept all the permission request... you should see your mobile screen in your laptop after a few seconds
 
 
 [standalone]: ../assets/standalone.png

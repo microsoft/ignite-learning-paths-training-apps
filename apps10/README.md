@@ -25,7 +25,7 @@ code.
 ## Assets in Train-The-Trainer kit
 
 - This guide
-- [PowerPoint presentation](presentations,md)
+- [PowerPoint presentation](presentations.md)
 - [Full-length recording of presentation](https://#)
 - [Demo Instructions](demos/README.md)
   
@@ -42,7 +42,7 @@ This training repository is divided in to the following sections:
 
 ## Slides
 
-The slides are divided in five sections:
+The [slides](presentations.md) are divided in five sections:
 
  Section                    | Slides           | Notes
 ----------------------------|---------------   |------
@@ -67,15 +67,9 @@ Xamarin                     | 34-35, 36*,       |
 
 ## Deployment / Preparation
 
-The following steps are necessary to prepare for APPS10 demos.
+>**What's Here?** Deploying the demo environment on Azure - including the prerequisites.
 
-### Required Software
-
-1. Install [Visual Studio Code](https://code.visualstudio.com/) 
-1. Install the [Remote extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) for VSCOde. 
-1. You will need [SSH Client](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse) installed. 
-    * If you need a set of keys, open a terminal and execute the command `ssh-keygen -t rsa -b 2048` remember where you put the information (usually C:\Users\<USERNAME>/.ssh/ ) and your passphrase (aka password). 
-1.  For sharing Android device: [Vysor](http://www.vysor.io/)
+[Instructions and prerequisites are outlined here](deployment/README.md). 
 
 
 ## Demos
