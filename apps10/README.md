@@ -25,17 +25,16 @@ code.
 ## Assets in Train-The-Trainer kit
 
 - This guide
-- [PowerPoint presentation](https://#)
+- [PowerPoint presentation](presentations,md)
 - [Full-length recording of presentation](https://#)
-- [Full-length recording of presentation - Director Cut](https://youtu.be/0kGGhoEB-48)
-- [Demo Instructions](demos/demo-instructions.md)
+- [Demo Instructions](demos/README.md)
   
 
 ## Get Started
 
 This training repository is divided in to the following sections:
 
-| [Slides](#slides) | [Demos](demos/demo-instructions.md) | [Deployment](deployment/readme.md) | 
+| [Slides](#slides) | [Demos](demos/README.md) | [Deployment](deployment/README.md) | 
 |-------------------|---------------------------|--------------------------------------
 | 42 slides - 25 minutes, | 4 demos - 20 minutes, | 1 automated deployment
 
@@ -76,41 +75,21 @@ The following steps are necessary to prepare for APPS10 demos.
 1. Install the [Remote extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) for VSCOde. 
 1. You will need [SSH Client](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse) installed. 
     * If you need a set of keys, open a terminal and execute the command `ssh-keygen -t rsa -b 2048` remember where you put the information (usually C:\Users\<USERNAME>/.ssh/ ) and your passphrase (aka password). 
-
-### Suggested setup to present
-
-> You should have a few things open a ready:
-
-- PowerPoint
-- Browser Tab: Portal Azure Dashboard/ home
-- Browser Tab: Tailwind traders website (from PaaS solution)
-- Browser Tab: Scale sets Resource Group
-- Browser Tab: PaaS Resource Group
-- Browser Tab: Key Vault
-- Visual Studio Code, with the Azure CLI to create a scale set
-    ```
-    az vmss create \
-        -g $RGName \
-        -n myScaleSet \
-        --image "/subscriptions/<subscription ID>/resourceGroups/myGalleryRG/providers/Microsoft.Compute/galleries/myGallery/images/myImageDefinition/versions/1.0.0" \
-        --admin-username azureuser \
-        --generate-ssh-keys
-   ```
-- ZoomIt (or another application that zoom your screen) should be running, there is tiny stuff to show.
+1.  For sharing Android device: [Vysor](http://www.vysor.io/)
 
 
 ## Demos
 
 > What's Here? Pre-delivery preparation, stage ready videos, required files (such as JSON templates), and walk-through videos
 
-Detailed explanations of each demonstration associated with this presentation can be found in this section. There are 3 "live from stage" technical demonstrations that utilize a number of tools both in and out of Azure. [You can get a high level overview of the tools and how we will be using them here](demos/demo-instructions.md).
+Detailed explanations of each demonstration associated with this presentation can be found in this section. There are 3 "live from stage" technical demonstrations that utilize a number of tools both in and out of Azure. [You can get a high level overview of the tools and how we will be using them here](demos/README.md).
 
 | Demo 	                                    | Minutes | Video
 --------------------------------------------|---------|-----------------
-|  [1 - Let’s Create a VM ](demos/demo-instructions.md#demo-1---lets-create-a-vm)            | ?       | [Link]()
-|  [2 - Alternative PaaS - WebApp](demos/demo-instructions.md#demo-2---plan-b-paas---webapp)  | ?       | [Link]()
-|  [3 - Securing the app with Azure Key Vault](demos/demo-instructions.md#demo-3---securing-the-app-with-azure-key-vault) | ?       | [Link]()
-|  [4 - Quick look at the Tailwind Traders App](demos/demo-instructions.md#demo-4---quick-look-at-the-tailwind-traders-app) | ?       | [Link]()
+|  [1 - Let’s Create a VM ](demos/README.md#demo-1---lets-create-a-vm)            | ?       | [Link]()
+|  [2 - Alternative PaaS - WebApp](demos/README.md#demo-2---plan-b-paas---webapp)  | ?       | [Link]()
+|  [3 - Securing the app with Azure Key Vault](demos/README.md#demo-3---securing-the-app-with-azure-key-vault) | ?       | [Link]()
+|  [4 - Quick look at the Tailwind Traders App](demos/README.md#demo-4---quick-look-at-the-tailwind-traders-app) | ?       | [Link]()
 
 ## Become a Trained Presenter
 

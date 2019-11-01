@@ -1,5 +1,28 @@
 # Demos instructions
 
+## Suggested setup to present
+
+> You should have a few things open a ready:
+
+- PowerPoint
+- Browser Tab: Portal Azure Dashboard/ home
+- Browser Tab: Tailwind traders website (from PaaS solution)
+- Browser Tab: Scale sets Resource Group
+- Browser Tab: PaaS Resource Group
+- Browser Tab: Key Vault
+- Visual Studio Code, with the Azure CLI to create a scale set
+    ```
+    az vmss create \
+        -g $RGName \
+        -n myScaleSet \
+        --image "/subscriptions/<subscription ID>/resourceGroups/myGalleryRG/providers/Microsoft.Compute/galleries/myGallery/images/myImageDefinition/versions/1.0.0" \
+        --admin-username azureuser \
+        --generate-ssh-keys
+   ```
+- ZoomIt (or another application that zoom your screen) should be running, there is tiny stuff to show.
+
+---
+
 ## Demo 1 - Let’s Create a VM 
 
 - From Portal Azure Dashboard/ home
@@ -52,6 +75,8 @@ Have some fun the the VM. When it will be the real tailwind VM the app should be
 
 Demo 1 is done, let's do demo 1.5.
 
+---
+
 ## Demo 2 - Plan B: PaaS - WebApp
 
 Now it's time to introduce the PaaS setup. Some people prefer VM other will embrace the PaaS and go VMsless
@@ -73,6 +98,8 @@ Now it's time to introduce the PaaS setup. Some people prefer VM other will embr
 
 Demo 1 done. Back to slide.
 
+---
+
 ## Demo 3 - Securing the app with Azure Key Vault
 
 - From the portal, back to tab with the Configuration open
@@ -87,6 +114,8 @@ Let's explain where it come from. See Before that talk you already created a Key
 - From the left panel click on Secret, and click again.
 - Provide information about where the URL come from, show the real connectionstring
 - Explains the how you could do a ne version or the and expiration date.
+
+--- 
 
 ## Demo 4 - Quick look at the Tailwind Traders App
 

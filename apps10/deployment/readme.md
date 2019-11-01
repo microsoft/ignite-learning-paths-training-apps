@@ -15,6 +15,8 @@ To deploy this solution you just have to click the **Deploy to Azure**, and sele
 
 [![Deploy to Azure](https://azuredeploy.net/deploybutton.svg)](https://deploy.azure.com/?repository=https://github.com/Microsoft/TailwindTraders-Website/tree/master)
 
+![standalone][standalone]
+
 <!--
 - Deploy Full PaaS version (with Key vault)
     > Inspired from : https://gist.github.com/anthonychu/9ab34d2991fb5c1c0c29faeebbe43a51#file-tailwind-deployments-md
@@ -88,3 +90,20 @@ Once the key vault is created we will add a secret, and populate it.
 - Re-open the App Service, and re-open the **SqlConnectionString** in the setting
 - Replace the current value by: `@Microsoft.KeyVault(SecretUri=URL_FROM_KEYVAULT)`, where *URL_FROM_KEYVAULT* is replaced by the url you got from the key vault.
 - Restart the App Service, and test if it's working. It should.  
+
+
+## Mobile App
+
+> The mobile app currently is only available for phones. Devices such as Tablets (iPad) will not work
+
+- Locate and install the Tailwind Traders app on your device's app store.
+    - On the mobile device navigate to the URL: aka.ms/tailwind-droid (for Android)
+- Login to app with fake email and password.
+- After logging in, go to Menu > Settings ![settings][settings]
+- Update Product Service API URL with url of deployed Tailwind Traders website as done in [1 - The Tailwind Traders solution full PaaS](#1---the-tailwind-traders-solution-full-paas).
+- Save your changes with the "Save" button at the bottom.
+- Can't access the app after troubleshooting? Contact Matt Soucoup for assistance
+
+
+[standalone]: ../assets/standalone.png
+[settings]: ../assets/settings.jpg
