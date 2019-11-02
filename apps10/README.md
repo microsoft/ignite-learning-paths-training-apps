@@ -38,7 +38,7 @@ This training repository is divided in to the following sections:
 |-------------------|---------------------------|--------------------------------------
 | 42 slides - 25 minutes, | 4 demos - 20 minutes, | 1 automated deployment
 
- [Full-length video can be viewed here (Coming Soon..)](https://coming.soon).
+ [Full-length video can be viewed here](https://globaleventcdn.blob.core.windows.net/assets/apps/apps10/APPS10_full.mp4).
 
 ## Slides
 
@@ -80,10 +80,10 @@ Detailed explanations of each demonstration associated with this presentation ca
 
 | Demo 	                                    | Minutes | Video
 --------------------------------------------|---------|-----------------
-|  [1 - Let’s Create a VM ](demos/README.md#demo-1---lets-create-a-vm)            | ?       | [Link]()
-|  [2 - Alternative PaaS - WebApp](demos/README.md#demo-2---plan-b-paas---webapp)  | ?       | [Link]()
-|  [3 - Securing the app with Azure Key Vault](demos/README.md#demo-3---securing-the-app-with-azure-key-vault) | ?       | [Link]()
-|  [4 - Quick look at the Tailwind Traders App](demos/README.md#demo-4---quick-look-at-the-tailwind-traders-app) | ?       | [Link]()
+|  [1 - Let’s Create a VM ](demos/README.md#demo-1---lets-create-a-vm)            | ?       | [Link](https://globaleventcdn.blob.core.windows.net/assets/apps/apps10/APPS10_demo1.mp4)
+|  [2 - Alternative PaaS - WebApp](demos/README.md#demo-2---plan-b-paas---webapp)  | ?       | [Link](https://globaleventcdn.blob.core.windows.net/assets/apps/apps10/APPS10_demo2.mp4)
+|  [3 - Securing the app with Azure Key Vault](demos/README.md#demo-3---securing-the-app-with-azure-key-vault) | ?       | [Link](https://globaleventcdn.blob.core.windows.net/assets/apps/apps10/APPS10_demo3.mp4)
+|  [4 - Quick look at the Tailwind Traders App](demos/README.md#demo-4---quick-look-at-the-tailwind-traders-app) | ?       | [Link](https://globaleventcdn.blob.core.windows.net/assets/apps/apps10/APPS10_demo4.mp4)
 
 ## Become a Trained Presenter
 
