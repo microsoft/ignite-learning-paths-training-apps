@@ -56,9 +56,15 @@ Right now there is no deployment/ ARM done for this. Since we just need to show 
 
 -->
 
+Let's create a VM scaleset with Azure CLI
+
+    az group create --name apps10demo-vmscale --location eastus
+
+    az vmss create --resource-group apps10demo-vmscale --name apps10ScaleSet --image "/subscriptions/<SUBSCRIPTION_ID>/resourceGroups/Tailwind-Shared/providers/Microsoft.Compute/galleries/TailwindShared/images/tailwind-demo1" --upgrade-policy-mode automatic --admin-username frankyadmin --ssh-key-value "C:\Users\frank\.ssh\id_rsa.pub"
+
 ## 3. Images of Tailwind Traders VM in a Shared Gallery
 
-Right now there is no real Tailwind image ready to be use in a scale set. We will fake this for now.
+> Right now there is no real Tailwind image ready to be use in a scale set. We will fake this for now.
 
 > 💡Always use the same location to be able to see/ use your images
 
@@ -100,6 +106,19 @@ Once the key vault is created we will add a secret, and populate it.
 - Re-open the App Service, and re-open the **SqlConnectionString** in the setting
 - Replace the current value by: `@Microsoft.KeyVault(SecretUri=URL_FROM_KEYVAULT)`, where *URL_FROM_KEYVAULT* is replaced by the url you got from the key vault.
 - Restart the App Service, and test if it's working. It should.  
+
+### Enabled and Configure MSI
+
+- From the WebApp, click the Identity in the left panel.
+- Change the Status to **On**, and Save.
+
+
+- Note or put the Object ID in your clipboard.
+- Re-open the KeyVault
+- From the Left click on Access policies, and click the + Add Access Policy button
+- Select *Secret management* and use the Object ID noted previously to find the Principal of your Application.
+- Save
+
 
 
 ## 5- Mobile App
