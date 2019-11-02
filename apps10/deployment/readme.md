@@ -46,7 +46,7 @@ Right now there is no deployment/ ARM done for this. Since we just need to show 
     * Allow inbound port SSH(22)
 - Click Create.
 
-> ☝ Test your connection From VSCode (See Demo to know how.)
+> ☝ Test your connection From VSCode (See [Demo 1](../demos/README.md#demo-1---lets-create-a-vm))
 
 <!--
 - Deploy VM scale sets version 

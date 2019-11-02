@@ -20,6 +20,7 @@
         --generate-ssh-keys
    ```
 - ZoomIt (or another application that zoom your screen) should be running, there is tiny stuff to show.
+- Vysor with your mobile screen displayed. 
 
 ---
 
@@ -119,4 +120,26 @@ Let's explain where it come from. See Before that talk you already created a Key
 
 ## Demo 4 - Quick look at the Tailwind Traders App
 
-(coming soon...)
+- Switch to Vysor.
+- Explains that this a real phone that you are mirroring to our computer so they can see.
+
+Open the Tailwind traders application. This app was made in C# and Xamarin. It's available on iOS and Android sharing the same code, and leveraging many services in Azure as backend. If fact let's go in the Settings show I can show you the API that the application is calling...
+
+- Click on the hamburger menu and select Settings.
+
+So you could use the same API for your website and your application. And those component could scale depending on the demand if each services. In fact if you are interested to know more about this App in MOD30 this will show the behind the scene. I will show when and where this session is in the last slides.
+
+But before let's try that App. How about we add some item in my wishlist. So first I will go back to the main screen. and click that big button *StartSmart Shopping by taking a photo*.
+
+- Take a photo, or use a photo already available in the mobile device.
+
+Now if we go in the wishlist we should see the item... see something smart about it.
+
+- Take a few second.... Click on the hamburger menu and select wishlist.
+- Found your item...
+
+The photo was uploaded to the cloud was analyzed by some AI (aka Azure Cognitive Services) and than the description is return in my phone! How cool is that!
+
+This is possible using Azure serverless, but I won't tell more ( teasing LOL) 
+
+- Get back to the slide.
