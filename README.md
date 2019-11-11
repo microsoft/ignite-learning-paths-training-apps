@@ -1,5 +1,7 @@
 # Ignite Learning Paths - Train the trainer - APPS Learning Path
 
+![Learning Path](https://img.shields.io/badge/Learning%20Path-APPS-fe5e00?logo=microsoft)  ![Session](https://img.shields.io/badge/🗣️Sessions-6-31c754)
+
 Welcome, Presenter!
 
 We're glad you are here and look forward to your delivery of this amazing content. As an experienced presenter, we know you know HOW to present so this guide will focus on WHAT you need to present. It will provide you a full run-through of the presentation created by the presentation design team.
@@ -11,6 +13,7 @@ Here all the sessions available in the **APPS* learning path:
 # Building Applications for the Cloud
 
 - [**APPS10**: Options for Building and Running Your App in the Cloud](./apps10/README.md)
+- [**APPS11**: Related 15 Theater minute session - Azure and the Command Line – Options, Tips, and Tricks](./apps11/README.md)
 - [**APPS20**: Options for Data in the Cloud](./apps20/README.md)
 - [**APPS30**: Adding Cool Features to Your Application via Cloud Services  ](./apps30/README.md)
 - [**APPS40**: Managing Delivery of Your App via DevOps](./apps40/README.md)

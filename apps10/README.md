@@ -1,5 +1,7 @@
 # APPS10: Options for Building and Running Your App in the Cloud  
 
+![Learning Path](https://img.shields.io/badge/Learning%20Path-APPS-fe5e00?logo=microsoft) 
+
 ## Session Abstract
 
 We’ll show you how Tailwind Traders avoided a single point of failure, using cloud services to deploy their company website to multiple regions. We’ll cover all the options they considered, explain how and why they made their decisions, then dive into the components of their implementation.  

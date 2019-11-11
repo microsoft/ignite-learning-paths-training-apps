@@ -1,4 +1,6 @@
-# APPS50 - Taking Your App to the Next Level with Monitoring, Performance and Scaling
+# APPS50: Taking Your App to the Next Level with Monitoring, Performance and Scaling
+
+![Learning Path APPS](https://img.shields.io/badge/Learning%20Path-APPS-fe5e00?logo=microsoft)  ![Deploy to Azure](https://img.shields.io/badge/Deploy%20To-Azure-blue?logo=microsoft-azure)
 
 ## Session Abstract
 

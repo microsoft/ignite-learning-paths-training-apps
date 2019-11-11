@@ -1,4 +1,6 @@
-# APPS 20: Options for Data in the Cloud
+# APPS20: Options for Data in the Cloud
+
+![Learning Path](https://img.shields.io/badge/Learning%20Path-APPS-fe5e00?logo=microsoft) 
 
 ## Session Abstract
 

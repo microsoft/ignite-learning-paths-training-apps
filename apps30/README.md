@@ -1,5 +1,6 @@
-# Modernizing Your Application with Containers
+# APPS30: Modernizing Your Application with Containers
 
+![Learning Path](https://img.shields.io/badge/Learning%20Path-APPS-fe5e00?logo=microsoft) 
 
 ## Session Abstract
 

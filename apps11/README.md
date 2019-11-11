@@ -1,5 +1,7 @@
 # APPS11: Related 15 Theater minute session - Azure and the Command Line – Options, Tips, and Tricks
 
+![Learning Path](https://img.shields.io/badge/Learning%20Path-APPS-fe5e00?logo=microsoft) 
+
 ## Session Abstract
 
 *If you love working from the command line, or just want to know what you can do, this session will cover all the things you need to know to get the most out of the experience on Windows, Mac and Linux.  We’ll start with Windows command line, then the new Terminal, and the Windows Subsystem for Linux (WSL).  Then we’ll cover some interesting developments in the Azure cloud shell and show you how you can work with command line options VS Code.  By the end of this 15 minute session you’ll have some new and interesting ways to control the cloud from your keyboard!*
