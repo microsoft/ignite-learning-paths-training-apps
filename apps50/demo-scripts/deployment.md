@@ -71,7 +71,35 @@ When you are ready, deploy the backend services by clicking the button below:
 
 This deployment will take around 20 minutes, one of the first items to be deployed into the resource group that you selected is a container instance named `bootstrap-container`.  Navigate to the `bootstap-container` instance in the Azure portal. From the left option panel, under "Settings", click on **Containers**. You will know the deployment is done when the **State** will be **Terminated**
 
-Once the deployment is completed, click the tab "Logs" (in the middle of the screen) and scroll down to the bottom of the log output.  Here you can obtain the values for  `AKS_RESOURCE_GROUP` and `AKS_BACKEND_ENDPOINT`, please store these values in your variables.txt file so that they can be retrieved later.
+Once the deployment is completed, click the tab "Logs" (in the middle of the screen) and scroll down to the bottom of the log output.  
+
+> Note:
+> 
+> If in the an ERROR message:
+> 
+> ```
+> "error": {
+>   "code": "MissingSubscriptionRegistration",
+>   "message": "The subscription is not registered to use namespace 'Microsoft.ContainerService'. See https://aka.ms/rps-not-found for how to register subscriptions.",
+>   "details": [
+>     {
+>       "code": "MissingSubscriptionRegistration",
+>       "target": "Microsoft.ContainerService",
+>       "message": "The subscription is not registered to use namespace 'Microsoft.ContainerService'. See https://aka.ms/rps-not-found for how to register subscriptions."
+>     }
+>   ]
+> }
+> ```
+> 
+> You  will need to register the namespace with the command: `az provider register -n Microsoft.ContainerService`. This could take a few minutes. You can check the status using the command `az provider show -n Microsoft.ContainerService` and check if **registrationState** is "Registered".
+> 
+> You can refer to the documentation to [Resolve errors for resource provider registration](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-register-provider-errors?WT.mc_id=msignitethetour2019-github-apps50
+)
+>
+
+
+
+Here you can obtain the values for  `AKS_RESOURCE_GROUP` and `AKS_BACKEND_ENDPOINT`, please store these values in your variables.txt file so that they can be retrieved later.
 
 ![](../assets/bootstrapcontainer.png)
 
