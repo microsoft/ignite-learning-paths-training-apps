@@ -17,7 +17,9 @@ AZURE_FD_ENDPOINT=
 
 As we progress through the Deployment steps, you will be asked to update values for these variables. This will make it easy to follow along with the demo scripts later on.
 
-First you will need to deploy the Tailwind Traders Reference Deployment into the East US region (It is very important that you deploy into the East US region).  
+First you will need to deploy the Tailwind Traders Reference Deployment into the East US region 
+
+> ⚠️ It is very important that you deploy into the East US region. ⚠️
 
 In order to deploy this template, you need an Azure Service Principal. If you do not have one, you may create one by following the steps below.
 
@@ -67,7 +69,9 @@ When you are ready, deploy the backend services by clicking the button below:
 
 [![Deploy to Azure](https://azuredeploy.net/deploybutton.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fneilpeterson%2Ftailwind-reference-deployment%2Fmaster%2Fdeployment-artifacts-aks%2Fazuredeploy.json)
 
-This deployment will take around 20 minutes, one of the first items to be deployed into the resource group that you selected is a container instance named `bootstrap-container`.  Navigate to the `bootstap-container` instance in the Azure portal and select "Settings" => "Containers" => "Logs" and scroll down to the bottom of the log output.  Here you can obtain the values for  `AKS_RESOURCE_GROUP` and `AKS_BACKEND_ENDPOINT`, please store these values in your variables.txt file so that they can be retrieved later.
+This deployment will take around 20 minutes, one of the first items to be deployed into the resource group that you selected is a container instance named `bootstrap-container`.  Navigate to the `bootstap-container` instance in the Azure portal. From the left option panel, under "Settings", click on **Containers**. You will know the deployment is done when the **State** will be **Terminated**
+
+Once the deployment is completed, click the tab "Logs" (in the middle of the screen) and scroll down to the bottom of the log output.  Here you can obtain the values for  `AKS_RESOURCE_GROUP` and `AKS_BACKEND_ENDPOINT`, please store these values in your variables.txt file so that they can be retrieved later.
 
 ![](../assets/bootstrapcontainer.png)
 
