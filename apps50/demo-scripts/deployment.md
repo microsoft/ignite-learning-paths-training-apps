@@ -61,7 +61,7 @@ You will see an output similar to:
 
 You will need the values for `appId` and `password` for the next step, an example of where these will be used is shown below:
 
-![](./assets/backenddeploy.png)
+![](../assets/backenddeploy.png)
 
 When you are ready, deploy the backend services by clicking the button below:
 
@@ -69,11 +69,11 @@ When you are ready, deploy the backend services by clicking the button below:
 
 This deployment will take around 20 minutes, one of the first items to be deployed into the resource group that you selected is a container instance named `bootstrap-container`.  Navigate to the `bootstap-container` instance in the Azure portal and select "Settings" => "Containers" => "Logs" and scroll down to the bottom of the log output.  Here you can obtain the values for  `AKS_RESOURCE_GROUP` and `AKS_BACKEND_ENDPOINT`, please store these values in your variables.txt file so that they can be retrieved later.
 
-![](./assets/bootstrapcontainer.png)
+![](../assets/bootstrapcontainer.png)
 
 If the deployment completes successfully, you should end up with the following deployed resources:
 
-![](./assets/backend.png)
+![](../assets/backend.png)
 
 Demo 4 involves fixing an issue within Azure Kubernetes Services, we need to manually create the issue by performing the steps below.
 
@@ -111,7 +111,7 @@ az aks browse --resource-group AKS_RESOURCE_GROUP --name AKS_NAME
 
 The dashboard will attempt to load but you should be met with permissions issues, this is by design.
 
-![](./assets/k8spermissions.png)
+![](../assets/k8spermissions.png)
 
 
 Obtain the credentials to connect to your AKS instance with (be sure to replace the entirety of `AKS_RESOURCE_GROUP` and `AKS_NAME` with the appropriate values):
@@ -134,7 +134,7 @@ az aks browse --resource-group AKS_RESOURCE_GROUP --name AKS_NAME
 
 Select "Config and Storage" => "Config Maps" => "cfg-my-tt-cart", select "Edit" and copy the value for `HOST` to your variables.txt file so that it can be retrieved later, we will refer to this value as `HOST` in the Demo 4 script. Finally, edit out this value so that there is nothing there as shown below and select "Update":
 
-![](./assets/breakcart.png)
+![](../assets/breakcart.png)
 
 Now we just need to restart the my-tt-cart deployment with:
 
@@ -145,7 +145,7 @@ kubectl scale --replicas=1 deployment my-tt-cart
 
 You should be able to verify in the kubernetes dashboard that the cart service is broken in the dashboard (don't worry, we will fix it as part of demo 4)
 
-![](./assets/cartbroken.png)
+![](../assets/cartbroken.png)
 
 Next, you will need to deploy the Apps50 specific Frontend resources provided by the "Deploy to Azure" button below:
 
@@ -153,11 +153,11 @@ Next, you will need to deploy the Apps50 specific Frontend resources provided by
 
 After selecting the subscription, resource group, and location or deployment, you will need to provide a unique value for the following setting:
 
-![](./assets/settings.png)
+![](../assets/settings.png)
 
 `Resource Name Suffix` is a value that should consist of text only which is appended to the end of all created resources, ex: if you were to put "deployment" here, it would create the following resources:
 
-![](./assets/resources.png)
+![](../assets/resources.png)
 
 Update the value of `FRONTEND_RESOURCE_GROUP` in variables.txt with the value used for the name of the resource group that the frontend resources were deployed to.
 
