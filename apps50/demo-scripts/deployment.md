@@ -92,6 +92,10 @@ Once the deployment is completed, click the tab "Logs" (in the middle of the scr
 > ```
 > 
 > You  will need to register the namespace with the command: `az provider register -n Microsoft.ContainerService`. This could take a few minutes. You can check the status using the command `az provider show -n Microsoft.ContainerService` and check if **registrationState** is "Registered".
+>
+> And Same for namespace: 
+> - Microsoft.DBforPostgreSQL
+> - Microsoft.ContainerRegistry
 > 
 > You can refer to the documentation to [Resolve errors for resource provider registration](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-register-provider-errors?WT.mc_id=msignitethetour2019-github-apps50
 )
