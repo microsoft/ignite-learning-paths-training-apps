@@ -102,7 +102,6 @@ Once the deployment is completed, click the tab "Logs" (in the middle of the scr
 >
 
 
-
 Here you can obtain the values for  `AKS_RESOURCE_GROUP` and `AKS_BACKEND_ENDPOINT`, please store these values in your variables.txt file so that they can be retrieved later.
 
 ![](../assets/bootstrapcontainer.png)
@@ -111,29 +110,13 @@ If the deployment completes successfully, you should end up with the following d
 
 ![](../assets/backend.png)
 
+Search in this list of resources for the type **Kubernetes service**. Copy the name of the resource in the variables file as `AKS_NAME`. 
+
+---
+
 Demo 4 involves fixing an issue within Azure Kubernetes Services, we need to manually create the issue by performing the steps below.
 
-Ensure that you have installed the [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest) on your machine.
-
-Login to the azure subscription which contains the deployed resources with:
-
-```bash
-az login
-```
-
-Retrieve your active accounts with:
-
-```bash
-az account list
-```
-
-Set the appropriate account (be sure to replace the entirety of `Subscription_Id` with the value of the subscription id containing your deployed AKS instance):
-
-```bash
-az account set --subscription Subscription_Id
-```
-
-Next, install kubectl and follow the instructions to make the program accessible to your `PATH` with:
+Install kubectl and follow the instructions to make the program accessible to your `PATH` with:
 
 ```bash
 az aks install-cli
@@ -150,7 +133,7 @@ The dashboard will attempt to load but you should be met with permissions issues
 ![](../assets/k8spermissions.png)
 
 
-Obtain the credentials to connect to your AKS instance with (be sure to replace the entirety of `AKS_RESOURCE_GROUP` and `AKS_NAME` with the appropriate values):
+Close the tunnel by pressing CTRL+C.  Obtain the credentials to connect to your AKS instance with (be sure to replace the entirety of `AKS_RESOURCE_GROUP` and `AKS_NAME` with the appropriate values):
 
 ```bash
 az aks get-credentials --resource-group AKS_RESOURCE_GROUP --name AKS_NAME
@@ -162,7 +145,7 @@ Enable access to all services in the Kubernetes dashboard with:
 kubectl create clusterrolebinding kubernetes-dashboard --clusterrole=cluster-admin --serviceaccount=kube-system:kubernetes-dashboard
 ```
 
-Connect to the now accessible Kuberenetes dashboard with (be sure to replace the entirety of `AKS_RESOURCE_GROUP` and `AKS_NAME` with the appropriate values):
+Connect to the now accessible Kuberenetes dashboard running the same command as previously:
 
 ```bash
 az aks browse --resource-group AKS_RESOURCE_GROUP --name AKS_NAME
