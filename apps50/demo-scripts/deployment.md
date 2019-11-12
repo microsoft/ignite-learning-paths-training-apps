@@ -151,11 +151,13 @@ Connect to the now accessible Kuberenetes dashboard running the same command as 
 az aks browse --resource-group AKS_RESOURCE_GROUP --name AKS_NAME
 ```
 
-Select "Config and Storage" => "Config Maps" => "cfg-my-tt-cart", select "Edit" and copy the value for `HOST` to your variables.txt file so that it can be retrieved later, we will refer to this value as `HOST` in the Demo 4 script. Finally, edit out this value so that there is nothing there as shown below and select "Update":
+Front the left side, under "Config and Storage" section, select "Config Maps" => "cfg-my-tt-cart" and select "Edit". Save the value by copying the value of `HOST` to your variables.txt file so that it can be retrieved later, we will refer to this value as `HOST` in the Demo 4 script. 
+
+Finally, edit out this value in the dashboard so that there is nothing there as shown below and click the "Update" button.
 
 ![](../assets/breakcart.png)
 
-Now we just need to restart the my-tt-cart deployment with:
+Now we just need to restart the my-tt-cart deployment. I a new console use the following commands:
 
 ```bash
 kubectl scale --replicas=0 deployment my-tt-cart
