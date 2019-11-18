@@ -1,0 +1,127 @@
+{
+	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"servicePrincipalId": {
+			"type": "string",
+			"metadata": {
+				"description": "The service principle application id is used when deploying the Azure Kubernetes Service cluster."
+			  }
+		},
+		"servicePrincipalSecret": {
+			"type": "securestring",
+			"metadata": {
+				"description": "The service principle password is used when deploying the Azure Kubernetes Service cluster."
+			  }
+		},
+		"emailAddress": {
+			"type": "string",
+			"metadata": {
+				"description": "This value will be tagged on the resource group for identification purposes."
+			  }
+		}
+	},
+	"variables": {
+		"aciName": "bootstrap-container",
+		"rgname": "[resourceGroup().name]",
+		"bootstrapRoleAssignmentId": "[guid(concat(resourceGroup().id, 'contributor'))]",
+		"identityName": "bootstrap-creds",
+		"contributorRoleDefinitionId": "[concat('/subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Authorization/roleDefinitions/', 'b24988ac-6180-42a0-ab88-20f7382dd24c')]",
+		"containerName": "logs",
+		"deploymentImage": "neilpeterson/itt-bootstrap:1.0",
+		"sourceRepo": "https://github.com/neilpeterson/tailwind-reference-deployment-sandbox.git",
+		"entrypoint": "/deployment-artifacts-aks/deploy-app-insights.sh",
+		"sessionCode": "TWT"
+	},
+	"resources": [{
+			"type": "Microsoft.ManagedIdentity/userAssignedIdentities",
+			"name": "bootstrap-creds",
+			"apiVersion": "2018-11-30",
+			"location": "[resourceGroup().location]"
+		},
+		{
+			"type": "Microsoft.Authorization/roleAssignments",
+			"apiVersion": "2018-09-01-preview",
+			"name": "[variables('bootstrapRoleAssignmentId')]",
+			"dependsOn": [
+				"[resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', variables('identityName'))]"
+			],
+			"properties": {
+				"roleDefinitionId": "[variables('contributorRoleDefinitionId')]",
+				"principalId": "[reference(resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', variables('identityName')), '2015-08-31-preview').principalId]",
+				"scope": "[resourceGroup().id]",
+				"principalType": "ServicePrincipal"
+			}
+		},
+		{
+			"type": "Microsoft.ContainerInstance/containerGroups",
+			"apiVersion": "2018-10-01",
+			"name": "[variables('aciName')]",
+			"location": "[resourceGroup().location]",
+			"dependsOn": [
+				"[resourceId('Microsoft.Authorization/roleAssignments', variables('bootstrapRoleAssignmentId'))]"
+			],
+			"identity": {
+				"type": "UserAssigned",
+				"userAssignedIdentities": {
+					"[resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', variables('identityName'))]": {}
+				}
+			},
+			"properties": {
+				"osType": "Linux",
+				"restartPolicy": "Never",
+				"containers": [{
+					"name": "[variables('containerName')]",
+					"properties": {
+						"image": "[variables('deploymentImage')]",
+						"command": [
+							"/bin/sh",
+							"-c",
+							"sh /boot-strap.sh"
+						],
+						"resources": {
+							"requests": {
+								"cpu": 2,
+								"memoryInGB": 4
+							}
+						},
+						"environmentVariables": [{
+								"name": "RESOURCE_GROUP_NAME",
+								"secureValue": "[variables('rgname')]"
+							},
+							{
+								"name": "SOURCE_REPOSITORY",
+								"secureValue": "[variables('sourceRepo')]"
+							},
+							{
+								"name": "ENTRYPOINT",
+								"secureValue": "[variables('entrypoint')]"
+							},
+							{
+								"name": "MANAGED_IDENTITY",
+								"secureValue": "[concat(resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', variables('identityName')))]"
+							},
+							{
+								"name": "SESSION_CODE",
+								"secureValue": "[variables('sessionCode')]"
+							},
+							{
+								"name": "CLIENT_ID",
+								"secureValue": "[parameters('servicePrincipalId')]"
+							},
+							{
+								"name": "SECRET",
+								"secureValue": "[parameters('servicePrincipalSecret')]"
+							},
+							{
+								"name": "USER_ID",
+								"secureValue": "[parameters('emailAddress')]"
+							}
+						]
+					}
+				}]
+			}
+		}
+	],
+	"outputs": {}
+}
