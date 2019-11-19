@@ -1,10 +1,12 @@
 # Demos instructions
 
+The following document describe how to do all the demos presented during the session. You must have completed the [deployment](../deployment/README.md) before attempting to do the demos.
+
 ## Suggested setup to present
 
-> You should have a few things open a ready:
+> You should have a few things open and ready:
 
-- PowerPoint
+- PowerPoint at the title slide
 - Browser Tab: Portal Azure Dashboard/ home
 - Browser Tab: Tailwind traders website (from PaaS solution)
 - Browser Tab: Scale sets Resource Group

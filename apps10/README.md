@@ -8,11 +8,10 @@ We’ll show you how Tailwind Traders avoided a single point of failure, using c
 
 In this session, you’ll see how they used Microsoft technologies like VS Code, Azure Portal, and Azure CLI to build a secure application that runs and scales on Linux and Windows VMs and Azure Web Apps, with a companion phone App.  
 
-The session [Ignite Learning Paths - APPS10](https://github.com/microsoft/ignite-learning-paths/tree/master/apps/apps10).
 
 ## How To Use
 
-Welcome, Presenter! 
+Welcome,
 
 We're glad you are here and look forward to your delivery of this amazing content. As an experienced presenter, we know you know HOW to present so this guide will focus on WHAT you need to present. It will provide you a full run-through of the presentation created by the presentation design team. 
 
@@ -28,7 +27,7 @@ code.
 
 - This guide
 - [PowerPoint presentation](presentations.md)
-- [Full-length recording of presentation](https://#)
+- [Full-length recording of presentation](https://globaleventcdn.blob.core.windows.net/assets/apps/apps10/APPS10_full.mp4)
 - [Demo Instructions](demos/README.md)
   
 
@@ -65,7 +64,7 @@ Xamarin                     | 34-35, 36*,       |
 15:00 - 20:00 | Options for deployment - VMs/Scale Sets, ACI/AKS, Web Apps, Azure Blob Static Websites  
 20:00 - 35:00 | **Demos** – creating a VM, remote options, deploying to VM scale sets and Web app for Linux  
 35:00 - 40:00 | **Demo** - Securing the app with Azure Key Vault 
-40:00 - 45:00 | **Demo** - Adding a Phone App with Xamarin 
+40:00 - 45:00 | **Demo** - Demo of the Tailwind Traders mobile App (on Android or iOS)
 
 ## Deployment / Preparation
 
