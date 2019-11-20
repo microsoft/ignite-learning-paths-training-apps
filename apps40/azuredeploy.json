@@ -29,8 +29,8 @@
 		"contributorRoleDefinitionId": "[concat('/subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Authorization/roleDefinitions/', 'b24988ac-6180-42a0-ab88-20f7382dd24c')]",
 		"containerName": "logs",
 		"deploymentImage": "scottyc/itt-bootstrap:1.0",
-		"sourceRepo": "https://github.com/scotty-c/ignite-learning-paths.git",
-		"entrypoint": "/apps/apps40/deploy.sh",
+		"sourceRepo": "https://github.com/microsoft/ignite-learning-paths-training-apps.git",
+		"entrypoint": "/apps40/deploy.sh",
 		"sessionCode": "TWT"
 	},
 	"resources": [{

@@ -225,7 +225,7 @@ code.
 ## Assets in Train-The-Trainer kit
 
 - This guide
-- [PowerPoint presentation](https://globaleventcdn.blob.core.windows.net/assets/apps/apps40/APPS40_Consolidating\\Infrastructure\\with\\Azure\\Kubernetes\\Service_Aug16.pptx)
+- [PowerPoint presentation](presentations.md)
 - [Full-length recording of presentation](https://web.microsoftstream.com/video/191dfd60-e2b3-4396-b759-774aec5f1dee)
 - [Full-length recording of presentation - Director Cut](https://globaleventcdn.blob.core.windows.net/assets/apps/apps40/directors-cut.mp4)
 - [Demo Instructions](https://github.com/microsoft/ignite-learning-paths/tree/master/apps/apps40)
