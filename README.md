@@ -1,4 +1,4 @@
-# Ignite Learning Paths - Train the trainer - APPS Learning Path
+# Ignite Learning Paths - APPS Learning Path
 
 ![Learning Path](https://img.shields.io/badge/Learning%20Path-APPS-fe5e00?logo=microsoft)  ![Session](https://img.shields.io/badge/🗣️Sessions-6-31c754)
 
