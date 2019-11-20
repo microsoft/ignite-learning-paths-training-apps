@@ -28,6 +28,7 @@ Along with the video of the presentation, this document will link to all the ass
 - This guide
 - [PowerPoint presentation](https://globaleventcdn.blob.core.windows.net/assets/apps/apps30/apps30.pptx)
 - [Full-length recording of presentation](https://globaleventcdn.blob.core.windows.net/assets/apps/apps30/app30-dryrun.mp4)
+- [Full-length recording of from Ignite 2019](https://myignite.techcommunity.microsoft.com/sessions/83032?source=speakerdetail)
 - [Full-length recording of presentation - Director Cut](https://www.youtube.com/watch?v=ISQ7EMTvl4U&feature=youtu.be)
 - [Demo Instructions](https://github.com/microsoft/ignite-learning-paths/tree/master/apps/apps30)
 
