@@ -1,12 +1,12 @@
-# APPS 20: Options for Data in the Cloud
+# APPS20: Options for Data in the Cloud
+
+![Learning Path](https://img.shields.io/badge/Learning%20Path-APPS-fe5e00?logo=microsoft)
 
 ## Session Abstract
 
 Abstract: Tailwind Traders is a large retail corporation, with a dangerous single point of failure: sales, fulfillment, monitoring, and telemetry data is centralized across its online and brick and mortar outlets. We’ll review structured databases, unstructured data real-time data, file storage considerations, and share tips on balancing performance, cost, and operational impacts.
 
 In this session, you’ll learn how Tailwind Traders created a flexible data strategy using multiple Azure services, such as AzureSQL, CosmosDB, the CosmosDB Mongo API, and more – and how to overcome common challenges and find the right storage option.
-
-The session [Ignite Learning Paths - APPS20](https://github.com/microsoft/ignite-learning-paths/tree/master/apps/apps20).
 
 ## How To Use
 

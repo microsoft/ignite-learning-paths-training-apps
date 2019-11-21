@@ -1,5 +1,31 @@
 # Demos instructions
 
+The following document describe how to do all the demos presented during the session. You must have completed the [deployment](../deployment/README.md) before attempting to do the demos.
+
+## Suggested setup to present
+
+> You should have a few things open and ready:
+
+- PowerPoint at the title slide
+- Browser Tab: Portal Azure Dashboard/ home
+- Browser Tab: Tailwind traders website (from PaaS solution)
+- Browser Tab: Scale sets Resource Group
+- Browser Tab: PaaS Resource Group
+- Browser Tab: Key Vault
+- Visual Studio Code, with the Azure CLI to create a scale set
+    ```
+    az vmss create \
+        -g $RGName \
+        -n myScaleSet \
+        --image "/subscriptions/<subscription ID>/resourceGroups/myGalleryRG/providers/Microsoft.Compute/galleries/myGallery/images/myImageDefinition/versions/1.0.0" \
+        --admin-username azureuser \
+        --generate-ssh-keys
+   ```
+- ZoomIt (or another application that zoom your screen) should be running, there is tiny stuff to show.
+- Vysor with your mobile screen displayed. 
+
+---
+
 ## Demo 1 - Let’s Create a VM 
 
 - From Portal Azure Dashboard/ home
@@ -52,6 +78,8 @@ Have some fun the the VM. When it will be the real tailwind VM the app should be
 
 Demo 1 is done, let's do demo 1.5.
 
+---
+
 ## Demo 2 - Plan B: PaaS - WebApp
 
 Now it's time to introduce the PaaS setup. Some people prefer VM other will embrace the PaaS and go VMsless
@@ -73,6 +101,8 @@ Now it's time to introduce the PaaS setup. Some people prefer VM other will embr
 
 Demo 1 done. Back to slide.
 
+---
+
 ## Demo 3 - Securing the app with Azure Key Vault
 
 - From the portal, back to tab with the Configuration open
@@ -88,6 +118,30 @@ Let's explain where it come from. See Before that talk you already created a Key
 - Provide information about where the URL come from, show the real connectionstring
 - Explains the how you could do a ne version or the and expiration date.
 
+--- 
+
 ## Demo 4 - Quick look at the Tailwind Traders App
 
-(coming soon...)
+- Switch to Vysor.
+- Explains that this a real phone that you are mirroring to our computer so they can see.
+
+Open the Tailwind traders application. This app was made in C# and Xamarin. It's available on iOS and Android sharing the same code, and leveraging many services in Azure as backend. If fact let's go in the Settings show I can show you the API that the application is calling...
+
+- Click on the hamburger menu and select Settings.
+
+So you could use the same API for your website and your application. And those component could scale depending on the demand if each services. In fact if you are interested to know more about this App in MOD30 this will show the behind the scene. I will show when and where this session is in the last slides.
+
+But before let's try that App. How about we add some item in my wishlist. So first I will go back to the main screen. and click that big button *StartSmart Shopping by taking a photo*.
+
+- Take a photo, or use a photo already available in the mobile device.
+
+Now if we go in the wishlist we should see the item... see something smart about it.
+
+- Take a few second.... Click on the hamburger menu and select wishlist.
+- Found your item...
+
+The photo was uploaded to the cloud was analyzed by some AI (aka Azure Cognitive Services) and than the description is return in my phone! How cool is that!
+
+This is possible using Azure serverless, but I won't tell more ( teasing LOL) 
+
+- Get back to the slide.

@@ -17,14 +17,14 @@ az appservice plan create --name 001igniteapps30plan --resource-group 001ignitea
 az acr build --subscription  "Ignite The Tour" --registry 001igniteapps30acr --image twtapp:v1 .
 
 adminUser=twtadmin
-adminPassword=twtapps30pD
+adminPassword=<EXAMPLE>
 
 
 MongoConnectionString=
-mongodb://001apps30twtnosql:rsYKqMboHooQSIISeozNE8ur1sHUV4Jx3L1CPcTkbaCXSLMEX4HOfmQ18ezxkmKO62EylPBAdJH6i8eEz2qbzw==@001apps30twtnosql.documents.azure.com:10255/?ssl=true&replicaSet=globaldb
+mongodb://<EXAMPLE>:<EXAMPLE>==@001apps30twtnosql.documents.azure.com:10255/?ssl=true&replicaSet=globaldb
 
 SqlConnectionString=
-"Server=tcp:001apps30twtsql.database.windows.net,1433;Database=tailwind;User ID=twtadmin;Password=twtapps30pD;Encrypt=true;Connection Timeout=30;"
+"Server=tcp:001apps30twtsql.database.windows.net,1433;Database=tailwind;User ID=twtadmin;Password=<EXAMPLE>;Encrypt=true;Connection Timeout=30;"
 
               
 
@@ -33,5 +33,5 @@ apiUrl=/api/v1
 ApiUrlShoppingCart=/api/v1 
 "name": "productImagesUrl",               "value": "https://raw.githubusercontent.com/microsoft/TailwindTraders-Backend/master/Deploy/tailwindtraders-images/product-detail"
 
-MongoConnectionString mongodb://apps30twtnosql:noEfzXJZI6Mct1wmxnBHNQxnPVLXl5dpoFiNdUTEEN7y2rFFrdnfq4weNqVExp9emAgNng0Dyolz1aTSISqjZw==@apps30twtnosql.documents.azure.com:10255/?ssl=true&replicaSet=globaldb
-SqlConnectionString = Server=tcp:apps30twtsql.database.windows.net,1433;Initial Catalog=tailwind;Persist Security Info=False;User ID=twtadmin;Password=twtapps30pD;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
+MongoConnectionString mongodb://<EXAMPLE>:<EXAMPLE>==@apps30twtnosql.documents.azure.com:10255/?ssl=true&replicaSet=globaldb
+SqlConnectionString = Server=tcp:apps30twtsql.database.windows.net,1433;Initial Catalog=tailwind;Persist Security Info=False;User ID=<EXAMPLE>;Password=<EXAMPLE>;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
