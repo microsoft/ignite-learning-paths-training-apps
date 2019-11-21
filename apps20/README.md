@@ -8,8 +8,6 @@ Abstract: Tailwind Traders is a large retail corporation, with a dangerous singl
 
 In this session, you’ll learn how Tailwind Traders created a flexible data strategy using multiple Azure services, such as AzureSQL, CosmosDB, the CosmosDB Mongo API, and more – and how to overcome common challenges and find the right storage option.
 
-The session [Ignite Learning Paths - APPS20](https://github.com/microsoft/ignite-learning-paths/tree/master/apps/apps20).
-
 ## How To Use
 
 Welcome, Presenter!

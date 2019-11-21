@@ -28,6 +28,7 @@ code.
 - This guide
 - [PowerPoint presentation](presentations.md)
 - [Full-length recording of presentation](https://globaleventcdn.blob.core.windows.net/assets/apps/apps10/APPS10_full.mp4)
+- [Microsoft Ignite Orlando Session Video](https://myignite.techcommunity.microsoft.com/sessions/83004)
 - [Demo Instructions](demos/README.md)
   
 

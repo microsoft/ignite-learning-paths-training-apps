@@ -25,6 +25,7 @@ code.
 - [Provisioning Guide](./demo-scripts/deployment.md)
 - [PowerPoint presentation including notes for each slide](https://globaleventcdn.blob.core.windows.net/assets/apps/apps50/APPS50_Taking+Your+App+to+the+Next+Level+with+Monitoring,+Performance+and+Scaling_Aug16.pptx)
 - [Full-length recording of presentation](https://globaleventcdn.blob.core.windows.net/assets/apps/apps50/MITT-APPS50.mp4)
+- [Microsoft Ignite Orlando Session Video](https://myignite.techcommunity.microsoft.com/sessions/83006)
 - Individual recordings of stage-ready hands-on demos
   * [Demo 1: Identifying the issue](https://globaleventcdn.blob.core.windows.net/assets/apps/apps50/MITT-APPS50-Demo1.mp4)
   * [Demo 2: Enabling Application Insights in your Application](https://globaleventcdn.blob.core.windows.net/assets/apps/apps50/MITT-APPS50-Demo2.mp4)

@@ -8,7 +8,6 @@ Tailwind Traders’ recently moved one of its core applications from a virtual m
 
 In this session, you’ll learn how to manage containers for deployment, options for container registries, and ways to manage and scale deployed containers. You’ll also learn how Tailwind Traders uses Azure Key Vault service to store application secrets and make it easier for their applications to securely access business critical data.
 
-The session [Ignite Learning Paths - APPS30](https://github.com/microsoft/ignite-learning-paths/tree/master/apps/apps30).
 
 ## How To Use
 
