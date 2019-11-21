@@ -25,7 +25,7 @@ Along with the video of the presentation, this document will link to all the ass
 - This guide
 - [PowerPoint presentation](https://globaleventcdn.blob.core.windows.net/assets/apps/apps20/APPS20_Options%20for%20Data%20in%20the%20Cloud_Oct23.pptx)
 - [Full-length recording of presentation](https://globaleventcdn.blob.core.windows.net/assets/apps/apps20/apps20.mp4)
-- [Full-length recording of presentation - Director Cut]()
+- [Full-length recording of presentation - Director Cut](https://myignite.techcommunity.microsoft.com/sessions/83005)
 - [Demo Instructions](demos.md)
 
 ## Get Started
