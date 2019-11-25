@@ -1,5 +1,4 @@
-# Ignite Learning Paths - Building Applications for the Cloud
-
+# Ignite Learning Paths - Developing Cloud Native Applications
 ![Learning Path](https://img.shields.io/badge/Learning%20Path-APPS-fe5e00?logo=microsoft)  ![Session](https://img.shields.io/badge/🗣️Sessions-6-31c754)
 
 Welcome!
