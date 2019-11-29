@@ -1,12 +1,21 @@
 # APPS10: Options for Building and Running Your App in the Cloud  
 
-![Learning Path](https://img.shields.io/badge/Learning%20Path-APPS-fe5e00?logo=microsoft) 
+[![Learning Path](https://img.shields.io/badge/Learning%20Path-APPS-fe5e00?logo=microsoft)](https://github.com/microsoft/ignite-learning-paths-training-apps)
 
 ## Session Abstract
 
 We’ll show you how Tailwind Traders avoided a single point of failure, using cloud services to deploy their company website to multiple regions. We’ll cover all the options they considered, explain how and why they made their decisions, then dive into the components of their implementation.  
 
 In this session, you’ll see how they used Microsoft technologies like VS Code, Azure Portal, and Azure CLI to build a secure application that runs and scales on Linux and Windows VMs and Azure Web Apps, with a companion phone App.  
+
+
+## Table of Content
+
+| Resources          | Links                            |
+|-------------------|----------------------------------|
+| PowerPoint        | - [Presentation](presentations.md) |
+| Videos            | - [Dry Run Rehearsal](https://globaleventcdn.blob.core.windows.net/assets/apps/apps10/APPS10_full.mp4) <br/>- [Microsoft Ignite Orlando Recording](https://myignite.techcommunity.microsoft.com/sessions/83004) |
+| Demos             | - [Demo 1 - Let’s Create a VM ](demos/README.md#demo-1---lets-create-a-vm) <br/>- [Demo 2 - Alternative PaaS - WebApp](demos/README.md#demo-2---plan-b-paas---webapp) <br/>- [Demo 3 - Securing the app with Azure Key Vault](demos/README.md#demo-3---securing-the-app-with-azure-key-vault)<br/>- [Demo 4 - Quick look at the Tailwind Traders App](demos/README.md#demo-4---quick-look-at-the-tailwind-traders-app) |
 
 
 ## How To Use
@@ -22,15 +31,6 @@ code.
 2.  Watch the video presentation
 3.  Ask questions of the Lead Presenter
 
-
-## Assets in Train-The-Trainer kit
-
-- This guide
-- [PowerPoint presentation](presentations.md)
-- [Full-length recording of presentation](https://globaleventcdn.blob.core.windows.net/assets/apps/apps10/APPS10_full.mp4)
-- [Microsoft Ignite Orlando Session Video](https://myignite.techcommunity.microsoft.com/sessions/83004)
-- [Demo Instructions](demos/README.md)
-  
 
 ## Get Started
 
