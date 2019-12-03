@@ -76,4 +76,12 @@ It doesn't need to be this content, the important is to show your presenter skil
 
 Thanks goes to these wonderful people (emoji key):
 
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section --> <!-- prettier-ignore --> <table> <tr> <td align="center"><a href="https://medium.com/@bbenz/"> <img src="https://avatars2.githubusercontent.com/u/2809036?s=400&v=4" width="100px;" alt="Brian Benz"/><br /> <sub><b>Brian Benz</b></sub></a><br /> <a href="https://github.com/bbenz/ignite-tour-fy20/commits?author=bbenz" title="talk">📢</a> <a href="https://github.com/bbenz/ignite-tour-fy20/commits?author=bbenz" title="Documentation">📖</a> </td> </tr></table> <!-- ALL-CONTRIBUTORS-LIST:END -->
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section --> <!-- prettier-ignore --> <table> <tr> <td align="center"><a href="https://medium.com/@bbenz/"> <img src="https://avatars2.githubusercontent.com/u/2809036?s=400&v=4" width="100px;" alt="Brian Benz"/><br /> <sub><b>Brian Benz</b></sub></a><br /> <a href="https://github.com/bbenz/ignite-tour-fy20/commits?author=bbenz" title="talk">📢</a> <a href="https://github.com/bbenz/ignite-tour-fy20/commits?author=bbenz" title="Documentation">📖</a> </td> 
+<td align="center"><a href="http://cloud5mins.com/">
+        <img src="https://avatars2.githubusercontent.com/u/2404846?s=460&v=4" width="100px;" alt="Frank Boucher"/><br />
+        <sub><b>Frank Boucher</b></sub></a><br />
+            <a href="https://github.com/microsoft/ignite-learning-paths-training-apps/commits?author=FBoucher" title="talk">📢</a>
+            <a href="https://github.com/microsoft/ignite-learning-paths-training-apps/commits?author=FBoucher" title="Documentation">📖</a> 
+    </td>
+</tr>
+</table> <!-- ALL-CONTRIBUTORS-LIST:END -->
