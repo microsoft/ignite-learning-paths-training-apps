@@ -1,5 +1,7 @@
 # Slide 25 - Finding and Fixing Failures with Failure Analysis in Application Insights
 
+> 💡 You must have completed the [deployment](deployment.md) before attempting to do the demo.
+
 * Remind users of what happened in the first demo `Identifying the issue`.
 * Using the values in your variables.txt file, compare both endpoints `AUSTRALIA_EAST_SITE` and `EAST_US_SITE` 
   - For each, click on Powertools category

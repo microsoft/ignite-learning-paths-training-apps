@@ -8,6 +8,14 @@ Abstract: Tailwind Traders is a large retail corporation, with a dangerous singl
 
 In this session, you’ll learn how Tailwind Traders created a flexible data strategy using multiple Azure services, such as AzureSQL, CosmosDB, the CosmosDB Mongo API, and more – and how to overcome common challenges and find the right storage option.
 
+## Table of Content
+
+| Resources          | Links                            |
+|-------------------|----------------------------------|
+| PowerPoint        | - [Presentation](presentations.md) |
+| Videos            | - [Dry Run Rehearsal](https://globaleventcdn.blob.core.windows.net/assets/apps/apps20/apps20.mp4) <br/>- [Microsoft Ignite Orlando Recording](https://myignite.techcommunity.microsoft.com/sessions/83005) |
+| Demos             | - [Demo 1 - Blob Storage Demo](demos.md#blob-storage-demo) <br/>- [Demo 2 - SQL Azure Demo](demos.md#sql-azure-demo) <br/>- [Demo 3 - Key Vault Demo](demos.md#key-vault-demo)<br/>- [Demo 4 - Cosmos DB DEMO](demos.md#cosmos-db-demo) |
+
 ## How To Use
 
 Welcome, Presenter!

@@ -1,5 +1,7 @@
 # Slide 36 - Monitoring and Fixing Failures in AKS using Azure Monitor for Containers
 
+> 💡 You must have completed the [deployment](deployment.md) before attempting to do the demo.
+
 > But this doesn't fix our issues. If zero sales were made, it might be another issue. From our customers, we received reports that the shopping cart stopped working. 
 > That would affects all regions since our backend is hosted on AKS and is region agnostic.
 

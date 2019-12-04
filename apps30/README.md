@@ -8,6 +8,13 @@ Tailwind Traders’ recently moved one of its core applications from a virtual m
 
 In this session, you’ll learn how to manage containers for deployment, options for container registries, and ways to manage and scale deployed containers. You’ll also learn how Tailwind Traders uses Azure Key Vault service to store application secrets and make it easier for their applications to securely access business critical data.
 
+## Table of Content
+
+| Resources          | Links                            |
+|-------------------|----------------------------------|
+| PowerPoint        | - [Presentation](presentations.md) |
+| Videos            | - [Dry Run Rehearsal](https://globaleventcdn.blob.core.windows.net/assets/apps/apps30/app30-dryrun.mp4) <br/>- [Microsoft Ignite Orlando Recording](https://myignite.techcommunity.microsoft.com/sessions/83032) |
+| Demos             | - [Demo 1](example-notes.txt) |
 
 ## How To Use
 
@@ -61,7 +68,7 @@ The incremented name is just to keep it easy to follow.
 
 ---
 
-## Creating Resource Group and Databases.
+## Creating Resource Group and Databases
 
 Within [create-db.sh](https://github.com/microsoft/ignite-learning-paths/blob/master/apps/apps30/create-db.sh) there are a few bash variables to change.
 

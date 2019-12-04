@@ -1,14 +1,23 @@
 # APPS40: Consolidating Infrastructure with Azure Kubernetes Service
 
-![Learning Path](https://img.shields.io/badge/Learning%20Path-APPS-fe5e00?logo=microsoft) 
- 
+![Learning Path](https://img.shields.io/badge/Learning%20Path-APPS-fe5e00?logo=microsoft)
+
 ## Session Abstract
+
 Kubernetes is the open source container orchestration system that supercharges applications with scaling and reliability and unlocks advanced features, like A/B testing, Blue/Green deployments, canary builds, and dead-simple rollbacks.
 
 In this session, you’ll see how Tailwind Traders took a containerized application and deployed it to Azure Kubernetes Service (AKS). You’ll walk away with a deep understanding of major Kubernetes concepts and how to put it all to use with industry standard tooling.
 
+## Table of Content
 
-## Regions this code will work with  ​
+| Resources          | Links                            |
+|-------------------|----------------------------------|
+| PowerPoint        | - [Presentation](presentations.md) |
+| Videos            | - [Dry Run Rehearsal](https://globaleventcdn.blob.core.windows.net/assets/apps/apps40/directors-cut.mp4) <br/>- [Microsoft Ignite Orlando Recording](https://myignite.techcommunity.microsoft.com/sessions/83033) |
+| Demos             | - [Demo 1 - Scale Demo](#running-scale-demo) <br/>- [Demo 2 - Network policy](#network-policy) <br/>- [Demo 3 - Availability Zones](#availability-zones)|
+
+## Regions this code will work with
+
 * East US 2​
 * North Europe​
 * Southeast Asia​
@@ -62,6 +71,9 @@ Scroll to the bottom of the logs to retrieve both the application URL and the co
 
 
 ## Running scale demo
+
+> 💡 You must have completed the [deployment](#provider-registration) before attempting to do the demo.
+
 To run the scaling demo you need to add the publisher 
 ```
 cat <<EOF | kubectl apply -f -
@@ -118,6 +130,9 @@ EOF
 ```
 
 ## Network policy
+
+> 💡 You must have completed the [deployment](#provider-registration) before attempting to do the demo.
+
 For the networking policy demo we will need to open two terminals. The first we will pretend to be a rouge service in the default namespace.
 The second we will apply the network policy. 
 
@@ -185,6 +200,9 @@ EOF
 ```
 
 ## Availability zones
+
+> 💡 You must have completed the [deployment](#provider-registration) before attempting to do the demo.
+
 This is set up by the [deployment.json](deployment.json)
 To test this is set up correctly use the following command
 ```
@@ -202,7 +220,9 @@ Name:               virtual-node-aci-linux
 ```
 
 ## Delete your deployment
-To delete the deployment run the following 
+
+To delete the deployment run the following:
+
 ```
 az group delete -n < your resource group> -y
 ```

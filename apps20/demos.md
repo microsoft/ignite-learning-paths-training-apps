@@ -1,6 +1,8 @@
-### APPS 20 Demo Instructions
+# APPS 20 Demo Instructions
 
 ## Blob Storage Demo
+
+> 💡 You must have completed the [deployment](setup.md) before attempting to do the demo.
 
 - Go to the Tailwind Traders website in your browser
 - Quickly navigate through the catalog
@@ -14,14 +16,22 @@
 
 ## SQL Azure Demo
 
+> 💡 You must have completed the [deployment](setup.md) before attempting to do the demo.
+
 - Open the SQL Database instance in the Azure Portal
 - Click through and discuss the features in the portal
 
 ## Key Vault Demo
+
+> 💡 You must have completed the [deployment](setup.md) before attempting to do the demo.
+
 - Open the Key Vault instance in the Azure Portal
 - Show how to create a new secret
 
 ## Cosmos DB DEMO
+
+> 💡 You must have completed the [deployment](setup.md) before attempting to do the demo.
+
 - Navigate to the Cosmos DB instance in the Azure Portal
 - Show the data explorer. The collection should be empty
 - Go to the web applications. Add some things to the cart
