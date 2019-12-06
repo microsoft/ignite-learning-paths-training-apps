@@ -1,7 +1,6 @@
 # Slides
 
 | [README](/apps11/README.md) | [Slides](/apps11/slides/README.md) | [Demos](/apps11/demos/README.md)  
-|--------|-------|------------|-----------|
 
  **apps11 - Managing Delivery of your App via DevOps** PowerPoint presentation.
 
@@ -14,7 +13,6 @@
 The PowerPoint slide deck includes three (3) demos.
 
 | Section / Demo | Minutes | Slides | Video
-|----------|----------|-------|-----|
 |[1 - Introduction](https://www.youtube.com/watch?v=3hTbtZaTek0)|3 | *3 - 6* | [Link](https://www.youtube.com/watch?v=3hTbtZaTek0)
 |[1 - Demo - Opening command prompt, VS code,wsl and powershell from file explorer](https://youtu.be/3hTbtZaTek0?t=89)|2 | *3 - 6* | [Link](https://youtu.be/3hTbtZaTek0?t=89)
 |[2 - WSL and Terminal](https://youtu.be/3hTbtZaTek0?t=234)|2 | *7 - 10* |[Link](https://youtu.be/3hTbtZaTek0?t=234)
