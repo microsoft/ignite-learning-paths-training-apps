@@ -1,5 +1,7 @@
 # Slide 25 - Finding and Fixing Failures with Failure Analysis in Application Insights
 
+> 💡 You must have completed the [deployment](deployment.md) before attempting to do the demo.
+
 * Remind users of what happened in the first demo `Identifying the issue`.
 * Using the values in your variables.txt file, compare both endpoints `AUSTRALIA_EAST_SITE` and `EAST_US_SITE` 
   - For each, click on Powertools category
@@ -11,7 +13,7 @@
 * Open the AppInsights within the frontend `tailwindtraders-appinsights-apps50`
 * Navigate to the Application Map. Notice the `webbff` endpoint which is not a valid domain.
 * Click on the `webbff` node, then `Investigate failures` on the right
-* Notice all the failed requests around `webbff`
+* Notice all the failed requests around `AKS_BACKEND_ENDPOINT`. They will be represented on the AppMap by 2 circles with a blue arrow inbetween. The text on the error will be red to indicate error.
 * Click **on the number** of the first line in the top 10 response. Mention the suggested query to debug.
 * Click the suggested query to debug
 * Click on the line where `?&type=diytools` fails. Talk about the elements on the right. Especially the url with a  `http://AKS_BACKEND_ENDPOINT/webbff/v1/`. 

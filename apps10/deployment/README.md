@@ -90,7 +90,41 @@ Eventually the key vault will be created and populated during the PaaS deploymen
 - Click +, and type "Key Vault", then click the button create.
 - Give it a name, I suggested you create the Key Vault in the same Resource Group as the PaaS demo. This is where it will be when the process will be automatic.
 
-Once the key vault is created we will add a secret, and populate it.
+Once the key vault is created, We will need to provide some security, a Service Principal, for the WebApp so it can access the Key Vault and have **read** access to the secret.
+
+### Create a Service Principal for the WebApp
+
+- In another tab, Open the WebApp. (Using 2 tabs will simplify the back& forward between those two).
+- From the left menu click on **Identity**. 
+- We now assigning a Service Principal for our WebApp by changing the status to *on*.
+- Don't forget to **Save**. And when ask to *Enable system assigned managed identity* click Yes.
+
+  ![Create Service Principal][CreateServicePrincipal]
+
+
+### Give To the WebApp the Permission
+
+- Go back in the Key Vault, and click **Access policies**, than **+ Add Access Policy** button.
+
+  ![Add Access Policies][AccessPolicies]
+
+- Set the **Configuration from template** to Secret Management. This will check 7 permission in the Secret Permission list.
+- Expand **Select Principal** section.
+    * Type the name of the WebAPP. Alternatively you can also search by using the ObjectID provided by the portal after you assigned the Service Principal.
+    * Click on the WebApp to select it, and click the **Select** button at the bottom of the screen.
+    * Select the Add button.
+
+      ![Grant Access][GrantAccess]
+
+- DON'T FORGET TO SAVE!
+
+  ![Save Save Save][SaveSaveSave]
+
+
+### Create the Secret in Key Vault
+
+Now that we have a Key Vault and that the WebApp has access to it let's add a secret. We will move the SQL Connection string in the KeyVault and let the WebApp read it from there.
+
 - First, we need the **SqlConnectionString** (that's our secret)
     * From the PaaS solution, select the App Service (aka. Webapp) 
     * From the left panel select Configuration
@@ -98,27 +132,27 @@ Once the key vault is created we will add a secret, and populate it.
 - Now let's create the secret
     * Open the Key Vault
     * From the left panel, click on secret
-    * Click the **+ Generate/Import**
+    * Click the **+ Generate/Import** 
+
+      ![Create Secrets][CreateSecrets]
+
     * Give it a name (ex: secretConStr), and paste in value the connecctionstring value (ex: Server=tcp:tailwindtraders-apps10-s...)
+    * Then Click the Create blue button.
 - Click on the Secret you created
 - Click again on the secret it should look like a GUID
-- Save the URL contain in the **Secret identifier**
-- Re-open the App Service, and re-open the **SqlConnectionString** in the setting
+- Note (put it in the Clipboard) the URL contain in the **Secret identifier**
+
+  ![Save Secret URL][SaveSecretURL]
+
+- Re-open the App Service, and re-open the **SqlConnectionString** in the setting, by clicking the edit button.
 - Replace the current value by: `@Microsoft.KeyVault(SecretUri=URL_FROM_KEYVAULT)`, where *URL_FROM_KEYVAULT* is replaced by the url you got from the key vault.
-- Restart the App Service, and test if it's working. It should.  
+- Click the *Ok* button in the bottom of the screen.
+- Click the Save button on the top of the page.
+- Once it's done saving, click the refresh button. You should see now a *Key vault Reference*, with a green check beside your setting.
 
-### Enabled and Configure MSI
+  ![Success][Success]
 
-- From the WebApp, click the Identity in the left panel.
-- Change the Status to **On**, and Save.
-
-
-- Note or put the Object ID in your clipboard.
-- Re-open the KeyVault
-- From the Left click on Access policies, and click the + Add Access Policy button
-- Select *Secret management* and use the Object ID noted previously to find the Principal of your Application.
-- Save
-
+> If you see it in Red, Check again that you saved correctly the Service Principal, the rules, and the secret.
 
 
 ## 5- Mobile App
@@ -149,3 +183,10 @@ Once the key vault is created we will add a secret, and populate it.
 
 [standalone]: ../assets/standalone.png
 [settings]: ../assets/settings.jpg
+[CreateSecrets]: ../assets/CreateSecrets.png
+[SaveSecretURL]: ../assets/SaveSecretURL.png
+[CreateServicePrincipal]: ../assets/CreateServicePrincipal.png
+[AccessPolicies]: ../assets/AccessPolicies.png
+[GrantAccess]: ../assets/GrantAccess.png
+[SaveSaveSave]: ../assets/SaveSaveSave.png
+[Success]: ../assets/Success.png

@@ -1,5 +1,6 @@
-# Modernizing Your Application with Containers
+# APPS30: Modernizing Your Application with Containers
 
+![Learning Path](https://img.shields.io/badge/Learning%20Path-APPS-fe5e00?logo=microsoft) 
 
 ## Session Abstract
 
@@ -7,7 +8,13 @@ Tailwind Traders’ recently moved one of its core applications from a virtual m
 
 In this session, you’ll learn how to manage containers for deployment, options for container registries, and ways to manage and scale deployed containers. You’ll also learn how Tailwind Traders uses Azure Key Vault service to store application secrets and make it easier for their applications to securely access business critical data.
 
-The session [Ignite Learning Paths - APPS30](https://github.com/microsoft/ignite-learning-paths/tree/master/apps/apps30).
+## Table of Content
+
+| Resources          | Links                            |
+|-------------------|----------------------------------|
+| PowerPoint        | - [Presentation](presentations.md) |
+| Videos            | - [Dry Run Rehearsal](https://globaleventcdn.blob.core.windows.net/assets/apps/apps30/app30-dryrun.mp4) <br/>- [Microsoft Ignite Orlando Recording](https://myignite.techcommunity.microsoft.com/sessions/83032) |
+| Demos             | - [Demo 1](example-notes.txt) |
 
 ## How To Use
 
@@ -27,15 +34,16 @@ Along with the video of the presentation, this document will link to all the ass
 - This guide
 - [PowerPoint presentation](https://globaleventcdn.blob.core.windows.net/assets/apps/apps30/apps30.pptx)
 - [Full-length recording of presentation](https://globaleventcdn.blob.core.windows.net/assets/apps/apps30/app30-dryrun.mp4)
-- [Full-length recording of presentation - Director Cut](https://youtu.be/0kGGhoEB-48)
-- [Demo Instructions](https://github.com/microsoft/ignite-learning-paths/tree/master/apps/apps30)
+- [Full-length recording of from Ignite 2019](https://myignite.techcommunity.microsoft.com/sessions/83032?source=speakerdetail)
+- [Full-length recording of presentation - Director Cut](https://www.youtube.com/watch?v=ISQ7EMTvl4U&feature=youtu.be)
+- [Demo Instructions](https://github.com/microsoft/ignite-learning-paths-training-apps/tree/master/apps30)
 
 ## Getting Started
 
 To begin the demo you'll need to do a few things which are described in the TTT video:
 
 1. Execute a cloud shell
-2. Download the [create-db.sh](https://github.com/microsoft/ignite-learning-paths/blob/master/apps/apps30/create-db.sh) script.
+2. Download the [create-db.sh](https://github.com/microsoft/ignite-learning-paths-training-apps/blob/master/apps30/create-db.sh) script.
 3. Get the [example-notes.txt](example-notes.txt) file for your demonstration live - this will contain your example version of the app you will create live.
 4. You'll need the presentation deck, get the latest from the [presentations.md](presentations.md)
 
@@ -60,9 +68,9 @@ The incremented name is just to keep it easy to follow.
 
 ---
 
-## Creating Resource Group and Databases.
+## Creating Resource Group and Databases
 
-Within [create-db.sh](https://github.com/microsoft/ignite-learning-paths/blob/master/apps/apps30/create-db.sh) there are a few bash variables to change.
+Within [create-db.sh](https://github.com/microsoft/ignite-learning-paths-training-apps/blob/master/apps30/create-db.sh) there are a few bash variables to change.
 
 ```
 #!/bin/bash

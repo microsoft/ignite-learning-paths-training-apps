@@ -1,5 +1,6 @@
 # Slide 23 - Enabling Application Insights in your Application
 
+> 💡 You must have completed the [deployment](deployment.md) before attempting to do the demo.
 
 ## Part 1 - SPA Application
 

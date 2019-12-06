@@ -47,6 +47,8 @@ NOTE - The video and demos runs longer than 20 minutes as I've provided more dem
 
 ### [Demo 1: Opening command prompt, VS code, WSL and powershell from file explorer](https://youtu.be/3hTbtZaTek0?t=89)
 
+> 💡 You must have completed the [deployment](#pre-delivery-preparation) before attempting to do the demo.
+
 **What are we trying to demonstrate?**
 
 This is the first on-stage technical demonstration for the presentation.  
@@ -66,6 +68,8 @@ Demo
 
 ### [Demo 2: Customized Windows Terminal](https://youtu.be/3hTbtZaTek0?t=496)
 
+> 💡 You must have completed the [deployment](#pre-delivery-preparation) before attempting to do the demo.
+
 **What are we trying to demonstrate?**
 
 Show off a customized Terminal
@@ -78,6 +82,8 @@ This demo uses the following:
 ---
 
 ### [Demo 3: Connecting to a VM via Visual Studio Code Remote Window](https://youtu.be/3hTbtZaTek0?t=1058)
+
+> 💡 You must have completed the [deployment](#pre-delivery-preparation) before attempting to do the demo.
 
 **What are we trying to demonstrate?**
 
