@@ -6,15 +6,15 @@
 
 *If you love working from the command line, or just want to know what you can do, this session will cover all the things you need to know to get the most out of the experience on Windows, Mac and Linux.  We’ll start with Windows command line, then the new Terminal, and the Windows Subsystem for Linux (WSL).  Then we’ll cover some interesting developments in the Azure cloud shell and show you how you can work with command line options VS Code.  By the end of this 15 minute session you’ll have some new and interesting ways to control the cloud from your keyboard!*
 
-
-## Table of Content
-
+## Table of Contents
+ 
 | Resources          | Links                            |
 |-------------------|----------------------------------|
-| PowerPoint        | - [Presentation](presentations.md) |
-| Videos            | - [Dry Run Rehearsal](https://globaleventcdn.blob.core.windows.net/assets/apps/apps11/video/APPS11SessionRecordingTTT2019-11-01.mp4) |
-| Demos             | - [Demo 1 - Opening command prompt, VS code, WSL and powershell from file explorer](demos/README.md#demo-1-opening-command-prompt-vs-code-wsl-and-powershell-from-file-explorer) <br/>- [Demo 2 - Customized Windows Terminal](demos/README.md#demo-2-customized-windows-terminal) <br/>- [Demo 3 - Connecting to a VM via Visual Studio Code Remote Window](demos/README.md#demo-3-connecting-to-a-vm-via-visual-studio-code-remote-window) |
+| PowerPoint        | - [Presentation](slides/README.md) |
+| Videos            | - [Youtube with captions](https://youtu.be/3hTbtZaTek0)<br/> - [Full-length download](https://globaleventcdn.blob.core.windows.net/assets/apps/apps11/video/APPS11SessionRecordingTTT2019-11-01.mp4)<br/> - [Director's cut download](https://globaleventcdn.blob.core.windows.net/assets/apps/apps11/video/APPS11SessionRecordingTTT2019-11-01.mp4)<br/> - [Silent demo](https://globaleventcdn.blob.core.windows.net/assets/apps/apps11/video/APPS11SilentDemosTTT20191101.mp4)|
+| Demos             | - [1 - Opening command prompt, VS code,wsl and powershell from file explorer](https://youtu.be/3hTbtZaTek0?t=89) <br/>- [2 - Customized Windows Terminal](https://youtu.be/3hTbtZaTek0?t=496) <br/>- [3 - Connecting to a VM via Visual Studio Code Remote Window](https://youtu.be/3hTbtZaTek0?t=1058)<br/>|
 
+---
 
 ## How To Use This Repository
 
