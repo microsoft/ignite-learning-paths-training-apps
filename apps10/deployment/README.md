@@ -11,7 +11,7 @@
 
 There is multiple things to deploy. Before we start presenting we want to have those things already deployed:
 
-1. The Tailwind Traders solution full PaaS
+1. The Tailwind Traders solution Standalone deployment
 2. The Tailwind Traders solution Frontend in a ScaleSet VM and backend as Services
 3. Images of Tailwind Traders VM in a Shared Gallery
 4. A Key Vault with a secret containing the SQL database connection
@@ -19,9 +19,13 @@ There is multiple things to deploy. Before we start presenting we want to have t
 6. Connect/ Share mobile screen on laptop
 
 
-## 1 - The Tailwind Traders solution full PaaS
+## 1 - The Tailwind Traders solution Standalone
 
-To deploy this solution you just have to click the **Deploy to Azure**, and select *Standalone*.
+To deploy this solution you just have to click the **Deploy to Azure**, and select **Standalone**.
+
+**Note** - If you get an error during the deployment, check the resource group in the portal to see if it's still deploying.  When the deployment completes, check the Website created by the App service to see if it's working. If the Website is working, then the deployment was successful.  Otherwise please try the deployment in a different region.  
+
+We are working on a solution for this issue.
 
 [![Deploy to Azure](https://azuredeploy.net/deploybutton.svg)](https://deploy.azure.com/?repository=https://github.com/Microsoft/TailwindTraders-Website/tree/master)
 
