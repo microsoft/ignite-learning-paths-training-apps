@@ -1,0 +1,14 @@
+
+// Font Ligatures Rock!!
+
+var x = 0xABCDEF;
+
+-> --> ==> != === !== && ||<=<  
+
+</><tag> http://www.microsoft.com 
+
+<=><!-- HTML Comment -->
+
+i++; #### ***
+
+(Thanks Scott Hanselman for the examples)

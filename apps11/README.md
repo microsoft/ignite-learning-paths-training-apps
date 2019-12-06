@@ -7,6 +7,16 @@
 
 ---
 
+## Table of Contents
+ 
+| Resources          | Links                            |
+|-------------------|----------------------------------|
+| PowerPoint        | - [Presentation](slides/README.md) |
+| Videos            | - [Youtube with captions](https://youtu.be/3hTbtZaTek0)<br/> - [Full-length download](https://globaleventcdn.blob.core.windows.net/assets/apps/apps11/video/APPS11SessionRecordingTTT2019-11-01.mp4)<br/> - [Director's cut download](https://globaleventcdn.blob.core.windows.net/assets/apps/apps11/video/APPS11SessionRecordingTTT2019-11-01.mp4)<br/> - [Silent demo](https://globaleventcdn.blob.core.windows.net/assets/apps/apps11/video/APPS11SilentDemosTTT20191101.mp4)|
+| Demos             | - [1 - Opening command prompt, VS code,wsl and powershell from file explorer](https://youtu.be/3hTbtZaTek0?t=89) <br/>- [2 - Customized Windows Terminal](https://youtu.be/3hTbtZaTek0?t=496) <br/>- [3 - Connecting to a VM via Visual Studio Code Remote Window](https://youtu.be/3hTbtZaTek0?t=1058)<br/>|
+
+---
+
 ## How To Use This Repository
 
 Welcome, Presenter!
