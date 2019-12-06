@@ -1,8 +1,6 @@
 # Technical Demonstrations
 
 | [README](/apps11/README.md) | [Slides](/apps11/slides/README.md) | [Demos](/apps11/demos/README.md) | 
-|--------|-------|------------|-----------|
-
 
 ## Pre-delivery Preparation
 
@@ -37,7 +35,7 @@ There are three (3) separate demos.
 NOTE - The video and demos runs longer than 20 minutes as I've provided more demos than necessary - It's up to each presenter to choose personalized demos from those offered, using the provided profiles.json as a base, or make up their own.  
 
 | Section / Demo | Minutes | Slides | Video
-|----------|----------|-------|-----|
+
 |[1 - Opening command prompt, VS code,wsl and powershell from file explorer](https://youtu.be/3hTbtZaTek0?t=89)|2 | *3 - 6* | [Link](https://youtu.be/3hTbtZaTek0?t=89)
 |[2 - Customized Windows Terminal](https://youtu.be/3hTbtZaTek0?t=496)|5 | *7 - 10* | [Link](https://youtu.be/3hTbtZaTek0?t=496)
 |[3 - Connecting to a VM via Visual Studio Code Remote Window](https://youtu.be/3hTbtZaTek0?t=1058)|3 | *11 - 13* |[Link](https://youtu.be/3hTbtZaTek0?t=1058)
