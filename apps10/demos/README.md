@@ -1,10 +1,12 @@
 # Demos instructions
 
+The following document describe how to do all the demos presented during the session. You must have completed the [deployment](../deployment/README.md) before attempting to do the demos.
+
 ## Suggested setup to present
 
-> You should have a few things open a ready:
+> You should have a few things open and ready:
 
-- PowerPoint
+- PowerPoint at the title slide
 - Browser Tab: Portal Azure Dashboard/ home
 - Browser Tab: Tailwind traders website (from PaaS solution)
 - Browser Tab: Scale sets Resource Group
@@ -25,6 +27,8 @@
 ---
 
 ## Demo 1 - Let’s Create a VM 
+
+> 💡 You must have completed the [deployment](../deployment/README.md) before attempting to do the demo.
 
 - From Portal Azure Dashboard/ home
 - Click +, and type "Virtual machine scale set", then click the button create.
@@ -80,6 +84,8 @@ Demo 1 is done, let's do demo 1.5.
 
 ## Demo 2 - Plan B: PaaS - WebApp
 
+> 💡 You must have completed the [deployment](../deployment/README.md) before attempting to do the demo.
+
 Now it's time to introduce the PaaS setup. Some people prefer VM other will embrace the PaaS and go VMsless
 
 - Switch to the Browser Tab: PaaS Resource Group
@@ -103,6 +109,8 @@ Demo 1 done. Back to slide.
 
 ## Demo 3 - Securing the app with Azure Key Vault
 
+> 💡 You must have completed the [deployment](../deployment/README.md) before attempting to do the demo.
+
 - From the portal, back to tab with the Configuration open
 - Show a "old way" to do by showing the CosmoDB connection String **use the ZOOM**
 - Now show the SQLConnectionString
@@ -119,6 +127,8 @@ Let's explain where it come from. See Before that talk you already created a Key
 --- 
 
 ## Demo 4 - Quick look at the Tailwind Traders App
+
+> 💡 You must have completed the [deployment](../deployment/README.md) before attempting to do the demo.
 
 - Switch to Vysor.
 - Explains that this a real phone that you are mirroring to our computer so they can see.

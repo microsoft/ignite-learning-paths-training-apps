@@ -1,4 +1,6 @@
-# APPS 20: Options for Data in the Cloud
+# APPS20: Options for Data in the Cloud
+
+![Learning Path](https://img.shields.io/badge/Learning%20Path-APPS-fe5e00?logo=microsoft)
 
 ## Session Abstract
 
@@ -6,7 +8,13 @@ Abstract: Tailwind Traders is a large retail corporation, with a dangerous singl
 
 In this session, you’ll learn how Tailwind Traders created a flexible data strategy using multiple Azure services, such as AzureSQL, CosmosDB, the CosmosDB Mongo API, and more – and how to overcome common challenges and find the right storage option.
 
-The session [Ignite Learning Paths - APPS20](https://github.com/microsoft/ignite-learning-paths/tree/master/apps/apps20).
+## Table of Content
+
+| Resources          | Links                            |
+|-------------------|----------------------------------|
+| PowerPoint        | - [Presentation](presentations.md) |
+| Videos            | - [Dry Run Rehearsal](https://globaleventcdn.blob.core.windows.net/assets/apps/apps20/apps20.mp4) <br/>- [Microsoft Ignite Orlando Recording](https://myignite.techcommunity.microsoft.com/sessions/83005) |
+| Demos             | - [Demo 1 - Blob Storage Demo](demos.md#blob-storage-demo) <br/>- [Demo 2 - SQL Azure Demo](demos.md#sql-azure-demo) <br/>- [Demo 3 - Key Vault Demo](demos.md#key-vault-demo)<br/>- [Demo 4 - Cosmos DB DEMO](demos.md#cosmos-db-demo) |
 
 ## How To Use
 
@@ -25,7 +33,7 @@ Along with the video of the presentation, this document will link to all the ass
 - This guide
 - [PowerPoint presentation](https://globaleventcdn.blob.core.windows.net/assets/apps/apps20/APPS20_Options%20for%20Data%20in%20the%20Cloud_Oct23.pptx)
 - [Full-length recording of presentation](https://globaleventcdn.blob.core.windows.net/assets/apps/apps20/apps20.mp4)
-- [Full-length recording of presentation - Director Cut]()
+- [Full-length recording of presentation - Director Cut](https://myignite.techcommunity.microsoft.com/sessions/83005)
 - [Demo Instructions](demos.md)
 
 ## Get Started

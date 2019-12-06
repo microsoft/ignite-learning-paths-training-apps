@@ -1,11 +1,20 @@
 # APPS11: Related 15 Theater minute session - Azure and the Command Line – Options, Tips, and Tricks
 
+![Learning Path](https://img.shields.io/badge/Learning%20Path-APPS-fe5e00?logo=microsoft) 
+
 ## Session Abstract
 
 *If you love working from the command line, or just want to know what you can do, this session will cover all the things you need to know to get the most out of the experience on Windows, Mac and Linux.  We’ll start with Windows command line, then the new Terminal, and the Windows Subsystem for Linux (WSL).  Then we’ll cover some interesting developments in the Azure cloud shell and show you how you can work with command line options VS Code.  By the end of this 15 minute session you’ll have some new and interesting ways to control the cloud from your keyboard!*
 
 
----
+## Table of Content
+
+| Resources          | Links                            |
+|-------------------|----------------------------------|
+| PowerPoint        | - [Presentation](presentations.md) |
+| Videos            | - [Dry Run Rehearsal](https://globaleventcdn.blob.core.windows.net/assets/apps/apps11/video/APPS11SessionRecordingTTT2019-11-01.mp4) |
+| Demos             | - [Demo 1 - Opening command prompt, VS code, WSL and powershell from file explorer](demos/README.md#demo-1-opening-command-prompt-vs-code-wsl-and-powershell-from-file-explorer) <br/>- [Demo 2 - Customized Windows Terminal](demos/README.md#demo-2-customized-windows-terminal) <br/>- [Demo 3 - Connecting to a VM via Visual Studio Code Remote Window](demos/README.md#demo-3-connecting-to-a-vm-via-visual-studio-code-remote-window) |
+
 
 ## How To Use This Repository
 
@@ -74,4 +83,12 @@ It doesn't need to be this content, the important is to show your presenter skil
 
 Thanks goes to these wonderful people (emoji key):
 
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section --> <!-- prettier-ignore --> <table> <tr> <td align="center"><a href="https://medium.com/@bbenz/"> <img src="https://avatars2.githubusercontent.com/u/2809036?s=400&v=4" width="100px;" alt="Brian Benz"/><br /> <sub><b>Brian Benz</b></sub></a><br /> <a href="https://github.com/bbenz/ignite-tour-fy20/commits?author=bbenz" title="talk">📢</a> <a href="https://github.com/bbenz/ignite-tour-fy20/commits?author=bbenz" title="Documentation">📖</a> </td> </tr></table> <!-- ALL-CONTRIBUTORS-LIST:END -->
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section --> <!-- prettier-ignore --> <table> <tr> <td align="center"><a href="https://medium.com/@bbenz/"> <img src="https://avatars2.githubusercontent.com/u/2809036?s=400&v=4" width="100px;" alt="Brian Benz"/><br /> <sub><b>Brian Benz</b></sub></a><br /> <a href="https://github.com/bbenz/ignite-tour-fy20/commits?author=bbenz" title="talk">📢</a> <a href="https://github.com/bbenz/ignite-tour-fy20/commits?author=bbenz" title="Documentation">📖</a> </td> 
+<td align="center"><a href="http://cloud5mins.com/">
+        <img src="https://avatars2.githubusercontent.com/u/2404846?s=460&v=4" width="100px;" alt="Frank Boucher"/><br />
+        <sub><b>Frank Boucher</b></sub></a><br />
+            <a href="https://github.com/microsoft/ignite-learning-paths-training-apps/commits?author=FBoucher" title="talk">📢</a>
+            <a href="https://github.com/microsoft/ignite-learning-paths-training-apps/commits?author=FBoucher" title="Documentation">📖</a> 
+    </td>
+</tr>
+</table> <!-- ALL-CONTRIBUTORS-LIST:END -->

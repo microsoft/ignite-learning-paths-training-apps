@@ -5,7 +5,7 @@
 
  **apps11 - Managing Delivery of your App via DevOps** PowerPoint presentation.
 
-[Download the master Powerpoint file](http://cdn.tailwindtraders.com/assets/mod/apps11/apps11.pptx)
+[Download the master Powerpoint file](../presentations.md)
 
 [View Presentation thumbnails and a speaking script](script/apps11_Speaking_Script.md)
 
