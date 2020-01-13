@@ -1,0 +1,31 @@
+# aps30 infra pipeline TEARDOWN
+
+trigger:
+  branches:
+    include:
+    - master
+  paths:
+    include:
+    - apps30/teardown/*
+
+variables:
+
+  # resource group
+  resourceGroup: 'igniteapps30'
+
+  # subscription name
+  subName: 'Ignite The Tour'
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+
+- task: AzureCLI@2
+  displayName: 'Delete Everything'
+  inputs:
+    azureSubscription: 'Ignite the Tour(cd400f31-6f94-40ab-863a-673192a3c0d0)'
+    scriptType: 'bash'
+    scriptLocation: 'inlineScript'
+    inlineScript: 'az group delete --subscription "$(subName)" --name $(resourceGroup) -y'
+    workingDirectory: '$(System.DefaultWorkingDirectory)'

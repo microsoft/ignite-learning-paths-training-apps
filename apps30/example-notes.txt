@@ -21,7 +21,7 @@ adminPassword=<EXAMPLE>
 
 
 MongoConnectionString=
-mongodb://<EXAMPLE>:<EXAMPLE>==@001apps30twtnosql.documents.azure.com:10255/?ssl=true&replicaSet=globaldb
+mongodb://<EXAMPLE>:<EXAMPLE>==@001apps30twtnosqlge.documents.azure.com:10255/?ssl=true&replicaSet=globaldb
 
 SqlConnectionString=
 "Server=tcp:001apps30twtsql.database.windows.net,1433;Database=tailwind;User ID=twtadmin;Password=<EXAMPLE>;Encrypt=true;Connection Timeout=30;"
@@ -33,5 +33,5 @@ apiUrl=/api/v1
 ApiUrlShoppingCart=/api/v1 
 "name": "productImagesUrl",               "value": "https://raw.githubusercontent.com/microsoft/TailwindTraders-Backend/master/Deploy/tailwindtraders-images/product-detail"
 
-MongoConnectionString mongodb://<EXAMPLE>:<EXAMPLE>==@apps30twtnosql.documents.azure.com:10255/?ssl=true&replicaSet=globaldb
+MongoConnectionString mongodb://<EXAMPLE>:<EXAMPLE>==@apps30twtnosqlge.documents.azure.com:10255/?ssl=true&replicaSet=globaldb
 SqlConnectionString = Server=tcp:apps30twtsql.database.windows.net,1433;Initial Catalog=tailwind;Persist Security Info=False;User ID=<EXAMPLE>;Password=<EXAMPLE>;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;

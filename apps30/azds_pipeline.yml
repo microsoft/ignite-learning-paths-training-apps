@@ -1,0 +1,90 @@
+# aps30 infra pipeline
+### The following variables should be MANUALLY set as secret variables via the web interface  ### Secret variables are encrypted at rest with a 2048-bit RSA key
+
+### Example values:
+
+# adminUser twtadmin
+# adminPassword twtapps30pD
+
+trigger:
+  branches:
+    include:
+    - master
+  paths:
+    include:
+    - apps30/*
+
+variables:
+
+  # resource group
+  resourceGroup: 'igniteapps30'
+
+  # location
+  location: 'eastus'
+
+  # subscription name
+  subName: 'Ignite The Tour'
+
+  # cosmos db name
+  cosmosdbName: 'apps30twtnosqlge'
+
+  # sql db name
+  sqldbName: 'apps30twtsql'
+
+  # acr name
+  acrName: 'igniteapps30acr'
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+
+- task: AzureCLI@2
+  displayName: 'Create Resource Group'
+  inputs:
+    azureSubscription: 'Ignite the Tour(cd400f31-6f94-40ab-863a-673192a3c0d0)'
+    scriptType: 'bash'
+    scriptLocation: 'inlineScript'
+    inlineScript: 'az group create --subscription "$(subName)" --name $(resourceGroup) --location $(location)'
+    workingDirectory: '$(System.DefaultWorkingDirectory)'
+
+- task: AzureCLI@2
+  displayName: 'Create Virtual Network'
+  inputs:
+    azureSubscription: 'Ignite the Tour(cd400f31-6f94-40ab-863a-673192a3c0d0)'
+    scriptType: 'bash'
+    scriptLocation: 'inlineScript'
+    inlineScript: 'az network vnet create --name igniteapps30vnet --subscription  "$(subName)" --resource-group $(resourceGroup)   --subnet-name default'
+    workingDirectory: '$(System.DefaultWorkingDirectory)'
+
+- task: AzureCLI@2
+  displayName: 'Create Cosmos DB'
+  inputs:
+    azureSubscription: 'Ignite the Tour(cd400f31-6f94-40ab-863a-673192a3c0d0)'
+    scriptType: 'bash'
+    scriptLocation: 'inlineScript'
+    inlineScript: 'az cosmosdb create --name $(cosmosdbName) --resource-group $(resourceGroup) --kind MongoDB --subscription "$(subName)"'
+    workingDirectory: '$(System.DefaultWorkingDirectory)'
+
+- task: AzureCLI@2
+  displayName: 'Create SQL Instance'
+  inputs:
+    azureSubscription: 'Ignite the Tour(cd400f31-6f94-40ab-863a-673192a3c0d0)'
+    scriptType: 'bash'
+    scriptLocation: 'inlineScript'
+    inlineScript: |
+      az sql server create --location $(location) --resource-group $(resourceGroup) --name $(sqldbName) --admin-user $(adminUser) --admin-password $(adminPassword) --subscription "$(subName)"
+      
+      az sql server firewall-rule create --resource-group $(resourceGroup) --server $(sqldbName) --name azure --start-ip-address 0.0.0.0 --end-ip-address 0.0.0.0 --subscription "$(subName)"
+      
+      az sql db create --resource-group $(resourceGroup) --server $(sqldbName) --name tailwind --subscription "$(subName)"
+    workingDirectory: '$(System.DefaultWorkingDirectory)'
+
+- task: AzureCLI@2
+  displayName: 'Create ACR'
+  inputs:
+    azureSubscription: 'Ignite the Tour(cd400f31-6f94-40ab-863a-673192a3c0d0)'
+    scriptType: 'bash'
+    scriptLocation: 'inlineScript'
+    inlineScript: 'az acr create --resource-group $(resourceGroup) --name $(acrName) --sku Basic --subscription  "$(subName)" --admin-enabled true'
+    workingDirectory: '$(System.DefaultWorkingDirectory)'

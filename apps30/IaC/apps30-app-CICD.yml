@@ -1,0 +1,56 @@
+on: [push]
+
+name: apps30-full-cicd
+
+env:
+  resourceGroup: igniteapps30
+  webappName: igniteapps30
+
+jobs:
+  buildContainer:
+    runs-on: self-hosted
+    needs: deployInfra
+    steps:
+    
+    # checkout branch
+    - uses: actions/checkout@master
+
+    # log into Azure
+    - name: 'Login via Azure CLI'
+      uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+    
+    # docker login
+    - name: 'Docker Login'
+      uses: greenie-msft/container-actions/docker-login@master
+      with:
+        login-server: ${{ secrets.CONTAINER_REGISTRY }}
+        username: ${{ secrets.REGISTRY_USERNAME }}
+        password: ${{ secrets.REGISTRY_PASSWORD }}
+    
+    # build/push docker image
+    - name: 'build/push'
+      run: |
+        docker build Source/Tailwind.Traders.Web/ -t ${{ secrets.CONTAINER_REGISTRY }}/$webappName:$GITHUB_SHA
+        docker push ${{ secrets.CONTAINER_REGISTRY }}/$webappName:$GITHUB_SHA
+  
+  deployContainer:
+    runs-on: self-hosted
+    needs: buildContainer
+    steps:
+      # create webapp
+      - name: 'webapp create'
+        run: |
+          az webapp create --resource-group $resourceGroup --plan $webappName --name $webappName --deployment-container-image-name ${{ secrets.CONTAINER_REGISTRY }}/$webappName:${{ github.sha }}
+
+          az webapp log config -n $webappName -g $resourceGroup --web-server-logging filesystem
+
+          az webapp config container set --name $webappName --resource-group $resourceGroup --docker-custom-image-name ${{ secrets.CONTAINER_REGISTRY }}/$webappName:${{ github.sha }} --docker-registry-server-url https://${{ secrets.CONTAINER_REGISTRY }} --docker-registry-server-user ${{ secrets.REGISTRY_USERNAME }} --docker-registry-server-password ${{ secrets.REGISTRY_PASSWORD }}
+          
+          az webapp config appsettings set --resource-group $resourceGroup --name $webappName --settings apiUrl=/api/v1 ApiUrlShoppingCart=/api/v1 productImagesUrl=https://raw.githubusercontent.com/microsoft/TailwindTraders-Backend/master/Deploy/tailwindtraders-images/product-detail SqlConnectionString="${{ secrets.SQL_CONNECTION_STRING }}" MongoConnectionString=${{ secrets.MONGODB_CONNECTION_STRING }}
+
+      # logout
+      - name: 'Azure logout'
+        run: |
+          az logout
