@@ -159,72 +159,86 @@ az storage blob upload-batch --destination $BLOB_ENDPOINT --destination profiles
 
 #
 printf "\n***Setting up sclaing backend componets.***\n"
-#helm repo add kedacore https://kedacore.azureedge.net/helm
-#helm repo update
-#helm install kedacore/keda-edge --devel --set logLevel=debug --namespace keda --name keda
-# TODO remove after keda issue 83 is solved
-git clone https://github.com/kedacore/keda.git
-git -C keda checkout 6ee8f18
-helm install --name keda --namespace keda ./keda/chart/keda/ -f ./keda/chart/keda/values.yaml 
 
+# add kedacore repo
+helm repo add kedacore https://kedacore.github.io/charts
 
-helm install --name rabbitmq --set rabbitmq.username=user,rabbitmq.password=PASSWORD stable/rabbitmq
+# repo update
+helm repo update
+
+# keda install
+helm upgrade --install keda kedacore/keda --namespace keda
+
+# rabbitmq install
+helm upgrade --install rabbitmq --set rabbitmq.username=user,rabbitmq.password=PASSWORD stable/rabbitmq
 
 cat <<EOF | kubectl apply -f -
+apiVersion: v1
+kind: Secret
+metadata:
+name: rabbitmq-consumer
+data:
+RabbitMqHost: YW1xcDovL3VzZXI6UEFTU1dPUkRAcmFiYml0bXEuZGVmYXVsdC5zdmMuY2x1c3Rlci5sb2NhbDo1Njcy
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: rabbitmq-consumer
-  namespace: default
-  labels:
-    app: rabbitmq-consumer
+name: rabbitmq-consumer
+namespace: default
+labels:
+  app: rabbitmq-consumer
 spec:
-  selector:
-    matchLabels:
+selector:
+  matchLabels:
+    app: rabbitmq-consumer
+template:
+  metadata:
+    labels:
       app: rabbitmq-consumer
-  template:
-    metadata:
-      labels:
-        app: rabbitmq-consumer
-    spec:
-      containers:
-      - name: rabbitmq-consumer
-        image: jeffhollan/rabbitmq-client:dev
-        imagePullPolicy: Always
-        command:
-          - receive
-        args:
-          - 'amqp://user:PASSWORD@rabbitmq.default.svc.cluster.local:5672'
-      dnsPolicy: ClusterFirst
-      nodeSelector:
-        kubernetes.io/role: agent
-        beta.kubernetes.io/os: linux
-        type: virtual-kubelet
-      tolerations:
-      - key: virtual-kubelet.io/provider
-        operator: Exists
-      - key: azure.com/aci
-        effect: NoSchedule      
+  spec:
+    containers:
+    - name: rabbitmq-consumer
+      image: jeffhollan/rabbitmq-client:dev
+      imagePullPolicy: Always
+      command:
+        - receive
+      args:
+        - 'amqp://user:PASSWORD@rabbitmq.default.svc.cluster.local:5672'
+      envFrom:
+      - secretRef:
+          name: rabbitmq-consumer
+    dnsPolicy: ClusterFirst
+    nodeSelector:
+      kubernetes.io/role: agent
+      beta.kubernetes.io/os: linux
+      type: virtual-kubelet
+    tolerations:
+    - key: virtual-kubelet.io/provider
+      operator: Exists
+    - key: azure.com/aci
+      effect: NoSchedule    
 ---
 apiVersion: keda.k8s.io/v1alpha1
 kind: ScaledObject
 metadata:
-  name: rabbitmq-consumer
-  namespace: default
-  labels:
-    deploymentName: rabbitmq-consumer
+name: rabbitmq-consumer
+annotations:
+  "helm.sh/hook": crd-install
+namespace: default
+labels:
+  deploymentName: rabbitmq-consumer
 spec:
-  scaleTargetRef:
-    deploymentName: rabbitmq-consumer
-  pollingInterval: 5   # Optional. Default: 30 seconds
-  cooldownPeriod: 30   # Optional. Default: 300 seconds
-  maxReplicaCount: 30  # Optional. Default: 100
-  triggers:
-  - type: rabbitmq
-    metadata:
-      queueName: hello
-      host: 'amqp://user:PASSWORD@rabbitmq.default.svc.cluster.local:5672'
-      queueLength  : '5'
+scaleTargetRef:
+  deploymentName: rabbitmq-consumer
+pollingInterval: 5   # Optional. Default: 30 seconds
+cooldownPeriod: 30   # Optional. Default: 300 seconds
+maxReplicaCount: 30  # Optional. Default: 100
+triggers:
+- type: rabbitmq
+  metadata:
+    queueName: hello
+    host: RabbitMqHost
+    queueLength  : '5'
 EOF
   
   
