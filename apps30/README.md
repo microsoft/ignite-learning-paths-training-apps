@@ -115,7 +115,7 @@ From there, you can leave the default branch as master.
 
 You can either use the drop down for path to select the pipeline yml or manually type the path:
 
-`/apps/30/azds_pipeline.yml`
+`/apps30/azds_pipeline.yml`
 
 ![](images/existing-yml-path.png)
 
