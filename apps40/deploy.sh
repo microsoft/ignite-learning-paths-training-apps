@@ -165,6 +165,7 @@ printf "\n***Setting up sclaing backend componets.***\n"
 # TODO remove after keda issue 83 is solved
 git clone https://github.com/kedacore/keda.git
 git -C keda checkout 6ee8f18
+sed -i 's/latest/0.3/g' ./keda/chart/keda/values.yaml
 helm install --name keda --namespace keda ./keda/chart/keda/ -f ./keda/chart/keda/values.yaml 
 
 
