@@ -172,6 +172,13 @@ Next, you will need to deploy the Apps50 specific Frontend resources provided by
 
 [![Deploy to Azure](https://azuredeploy.net/deploybutton.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2Fignite-learning-paths-training-apps%2Fmaster%2Fapps50%2Fdeploy%2Fdeployment.json)
 
+> If the deployment of the code fails due to `ScmType`, you can manually deploy the application using the command lines below. 
+
+```
+az webapp deployment source delete -g RESOURCE_GROUP -n RESOURCE_NAME
+az webapp deployment source config --branch master --repo-url https://github.com/microsoft/TailwindTraders-Website.git --manual-integration -g RESOURCE_GROUP -n RESOURCE_NAME
+```
+
 After selecting the subscription, resource group, and location or deployment, you will need to provide a unique value for the following setting:
 
 ![](../assets/settings.png)
