@@ -1,10 +1,15 @@
 <!--
-This is a machine generated file, and should not be edited, as it will be overwritten with future updates.
+This is a machine generated file,
+and should not be edited,
+as it will be overwritten with future updates.
+
+If you have questions around this process
+please contact Scott Cate
 -->
 
 # APPS11 Presentation Files
 
-- [apps11.pptx](https://globaleventcdn.blob.core.windows.net/assets/apps/apps11/apps11.pptx) (Updated: Nov 05, 2019)
+- [apps11.pptx](https://globaleventcdn.blob.core.windows.net/assets/apps/apps11/apps11.pptx) (Updated: Nov 04, 2019)
 ---
 ## Historical Files
 - [apps11-2019-10_Oct-24.pptx](https://globaleventcdn.blob.core.windows.net/assets/apps/apps11/apps11-2019-10_Oct-24.pptx)
