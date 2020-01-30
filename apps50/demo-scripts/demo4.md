@@ -35,6 +35,14 @@
 * Set the `HOST` value to the value of `HOST` from variables.txt
   - This is the host for the COSMOS DB
 * To restart, go to `Workloads > Pods` and delete the cart-api pod. K8S will restart the container.
+
+> **WARNING**: You should delete PODS and not deployments. If you are deleting deployments, things will not restart itself. If you have setup the K8S CLI from before, you can also run the following command:
+
+```bash
+kubectl scale --replicas=0 deployment my-tt-cart
+kubectl scale --replicas=1 deployment my-tt-cart
+```
+
 * Head back to Application and test out `Add to cart`.
 * Should work now
 
