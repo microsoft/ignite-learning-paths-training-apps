@@ -55,7 +55,7 @@ Then refresh you account with
 az provider register --namespace Microsoft.ContainerService
 ```
 
-You will also need kubectl version 1.14.6
+You will also need kubectl version 1.15.7 or below
 
 ## Connect to deployment
 

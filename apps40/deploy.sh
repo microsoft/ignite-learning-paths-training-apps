@@ -58,7 +58,7 @@ vnetID=$(az network vnet subnet show --resource-group $azureResourceGroup --vnet
 az group deployment create -g $azureResourceGroup --template-file $tailwindInfrastructure \
   --parameters servicePrincipalId=$azureClientID servicePrincipalSecret=$azureClientSecret \
   sqlServerAdministratorLogin=$sqlServerUser sqlServerAdministratorLoginPassword=$sqlServePassword \
-  aksVersion=1.14.8 pgversion=10 vnetSubnetID=$vnetID
+  aksVersion=1.15.7 pgversion=10 vnetSubnetID=$vnetID
 
 # # Application Insights (using preview extension)
 az extension add -n application-insights
@@ -159,19 +159,21 @@ az storage blob upload-batch --destination $BLOB_ENDPOINT --destination profiles
 
 #
 printf "\n***Setting up sclaing backend componets.***\n"
-#helm repo add kedacore https://kedacore.azureedge.net/helm
-#helm repo update
-#helm install kedacore/keda-edge --devel --set logLevel=debug --namespace keda --name keda
-# TODO remove after keda issue 83 is solved
-git clone https://github.com/kedacore/keda.git
-git -C keda checkout 6ee8f18
-sed -i 's/latest/0.3/g' ./keda/chart/keda/values.yaml
-helm install --name keda --namespace keda ./keda/chart/keda/ -f ./keda/chart/keda/values.yaml 
-
-
+helm repo add kedacore https://kedacore.github.io/charts
+helm repo update
+helm install kedacore/keda --namespace keda --name keda
+# This is to wait that keda has enrolled the external metrics api  
+sleep 60
 helm install --name rabbitmq --set rabbitmq.username=user,rabbitmq.password=PASSWORD stable/rabbitmq
 
 cat <<EOF | kubectl apply -f -
+apiVersion: v1
+kind: Secret
+metadata:
+  name: rabbitmq-consumer
+data:
+  RabbitMqHost: YW1xcDovL3VzZXI6UEFTU1dPUkRAcmFiYml0bXEuZGVmYXVsdC5zdmMuY2x1c3Rlci5sb2NhbDo1Njcy
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -196,16 +198,9 @@ spec:
           - receive
         args:
           - 'amqp://user:PASSWORD@rabbitmq.default.svc.cluster.local:5672'
-      dnsPolicy: ClusterFirst
-      nodeSelector:
-        kubernetes.io/role: agent
-        beta.kubernetes.io/os: linux
-        type: virtual-kubelet
-      tolerations:
-      - key: virtual-kubelet.io/provider
-        operator: Exists
-      - key: azure.com/aci
-        effect: NoSchedule      
+        envFrom:
+        - secretRef:
+            name: rabbitmq-consumer
 ---
 apiVersion: keda.k8s.io/v1alpha1
 kind: ScaledObject
@@ -224,7 +219,7 @@ spec:
   - type: rabbitmq
     metadata:
       queueName: hello
-      host: 'amqp://user:PASSWORD@rabbitmq.default.svc.cluster.local:5672'
+      host: RabbitMqHost
       queueLength  : '5'
 EOF
   
