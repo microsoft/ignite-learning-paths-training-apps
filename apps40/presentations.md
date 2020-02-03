@@ -7,7 +7,7 @@ If you have questions around this process
 please contact Scott Cate
 -->
 
-# APPS40 Presentation Files
+# APPS40 Current Presentation Files
 
 - [apps40.pptx](https://globaleventcdn.blob.core.windows.net/assets/apps/apps40/apps40.pptx) (Updated: Nov 01, 2019)
 - [apps40.ja-jp.pptx](https://globaleventcdn.blob.core.windows.net/assets/apps/apps40/apps40.ja-jp.pptx) (Updated: Dec 05, 2019)

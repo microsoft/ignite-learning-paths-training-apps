@@ -7,7 +7,7 @@ If you have questions around this process
 please contact Scott Cate
 -->
 
-# APPS20 Presentation Files
+# APPS20 Current Presentation Files
 
 - [apps20.pptx](https://globaleventcdn.blob.core.windows.net/assets/apps/apps20/apps20.pptx) (Updated: Nov 01, 2019)
 - [apps20.zh-cn.pptx](https://globaleventcdn.blob.core.windows.net/assets/apps/apps20/apps20.zh-cn.pptx) (Updated: Dec 16, 2019)
