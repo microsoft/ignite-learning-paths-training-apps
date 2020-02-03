@@ -9,7 +9,7 @@ please contact Scott Cate
 
 # APPS10 Current Presentation Files
 
-- [apps10.pptx](https://globaleventcdn.blob.core.windows.net/assets/apps/apps10/apps10.pptx) (Updated: Nov 19, 2019)
+- [apps10.pptx](https://globaleventcdn.blob.core.windows.net/assets/apps/apps10/apps10.pptx)
 ---
 ## Historical Files
 - [apps10-2019-10_Oct-24.pptx](https://globaleventcdn.blob.core.windows.net/assets/apps/apps10/apps10-2019-10_Oct-24.pptx)
