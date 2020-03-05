@@ -173,6 +173,7 @@ Next, you will need to deploy the Apps50 specific Frontend resources provided by
 [![Deploy to Azure](https://azuredeploy.net/deploybutton.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2Fignite-learning-paths-training-apps%2Fmaster%2Fapps50%2Fdeploy%2Fdeployment.json)
 
 > If the deployment of the code fails due to `ScmType`, you can manually deploy the application using the command lines below. 
+> Note that you might have to wait a few minutes between the `delete` and the `config` commands.
 
 ```
 az webapp deployment source delete -g RESOURCE_GROUP -n RESOURCE_NAME
