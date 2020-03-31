@@ -24,11 +24,9 @@ In this session, you’ll see how Tailwind Traders took a containerized applicat
 - West Europe​
 - West US 2
 
-In order to deploy this template, you need an Azure Service Principal. If needed, use the `az ad sp create-for-rbac` command to create the service principal. See [az ad sp create-for-rbac](https://docs.microsoft.com/en-us/cli/azure/ad/sp?WT.mc_id=none-github-nepeters&view=azure-cli-latest#az-ad-sp-create-for-rbac) for more information.
+# Deployment
 
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2Fignite-learning-paths-training-apps%2Fmaster%2Fapps40%2Fazuredeploy.json" target="_blank">
-    <img src="http://azuredeploy.net/deploybutton.png"/>
-</a>
+In order to run this demo you'll need to follow the steps below.
 
 ## Provider registration
 
@@ -55,7 +53,33 @@ Then refresh you account with
 az provider register --namespace Microsoft.ContainerService
 ```
 
-You will also need kubectl version 1.15.7 or below
+You will also need kubectl version 1.15.7 or below.
+
+## Perform deployment
+
+__Create a Service Principal__
+
+In order to deploy this template, you need an Azure Service Principal. If needed, use the `az ad sp create-for-rbac --name tailwind-traders-sp` command to create the service principal. See [az ad sp create-for-rbac](https://docs.microsoft.com/en-us/cli/azure/ad/sp?WT.mc_id=none-github-nepeters&view=azure-cli-latest#az-ad-sp-create-for-rbac) for more information.
+
+> If you already have a Service Principal created, just issue the command again and it will patch the current SP with the new information.
+
+Save the information `appId` and `password` displayed after you created your SP with the `az ad sp create-for-rbac --name tailwind-traders-sp` command.
+
+__Perform deploy__
+
+You'll need to fetch the `appId` and `password` information to fill in the parameters section:
+
+![Azure Demo Deployment](https://i.imgur.com/cAhQLST.png)
+
+1. Fill the `appId` into the "Service Principal Id"
+2. Fill the `password` into the "Service Principal Secret"
+3. Fill in your __azure email__ into the "Email" field
+
+To start, click the button below:
+
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2Fignite-learning-paths-training-apps%2Fmaster%2Fapps40%2Fazuredeploy.json" target="_blank">
+    <img src="http://azuredeploy.net/deploybutton.png"/>
+</a>
 
 ## Connect to deployment
 
