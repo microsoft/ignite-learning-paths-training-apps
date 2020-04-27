@@ -158,7 +158,7 @@ az storage blob upload-batch --destination $BLOB_ENDPOINT --destination product-
 az storage blob upload-batch --destination $BLOB_ENDPOINT --destination profiles-list --source $tailwindWebImages/profiles-list --account-name $STORAGE
 
 #
-printf "\n***Setting up sclaing backend componets.***\n"
+printf "\n***Setting up scaling backend componets.***\n"
 helm repo add kedacore https://kedacore.github.io/charts
 helm repo update
 helm install kedacore/keda --namespace keda --name keda
@@ -232,13 +232,32 @@ spec:
       host: RabbitMqHost
       queueLength  : '5'
 EOF
+
+printf "\n***Setting up cluster information frontend.***\n"
+helm repo add clusterInfo https://lsantos.dev/apps40-scalingdemo-frontend/helm
+helm repo update
+
+helm upgrade --install --atomic visualization-frontend-$nameSpace \
+--set env=$nameSpace \
+--set image.tag=latest \
+--set 'ingress.hostname="cluster-info.${INGRESS}"' \
+--set environment.API_URL=http://visualization-api.${INGRESS} \
+--namespace $nameSpace \ 
+clusterInfo/visualization-frontend
   
-  
+helm upgrade --install --atomic visualization-backend-$nameSpace \
+--set env=$nameSpace \
+--set image.tag=latest \
+--set 'ingress.hostname="visualization-api.${INGRESS}"' \
+--namespace $nameSpace \ 
+clusterInfo/visualization-backend
   
 # Notes
 echo "*************** Connection Information ***************"
 echo "The Tailwind Traders Website can be accessed at:"
 echo "http://$INGRESS"
+echo "The cluster information and scale tracker can be accessed at:"
+echo "http://cluster-info.$INGRESS"
 echo ""
 echo "Run the following to connect to the AKS cluster:"
 echo "az aks get-credentials --name $AKS_CLUSTER --resource-group $azureResourceGroup --admin"
