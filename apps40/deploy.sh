@@ -240,16 +240,16 @@ helm repo update
 helm upgrade --install --atomic visualization-frontend-$nameSpace \
 --set env=$nameSpace \
 --set image.tag=latest \
---set 'ingress.hostname="cluster-info.${INGRESS}"' \
+--set ingress.hostname=cluster-info.${INGRESS} \
 --set environment.API_URL=http://visualization-api.${INGRESS} \
---namespace $nameSpace \ 
+--namespace $nameSpace \
 clusterInfo/visualization-frontend
   
 helm upgrade --install --atomic visualization-backend-$nameSpace \
 --set env=$nameSpace \
 --set image.tag=latest \
---set 'ingress.hostname="visualization-api.${INGRESS}"' \
---namespace $nameSpace \ 
+--set ingress.hostname=visualization-api.${INGRESS} \
+--namespace $nameSpace \
 clusterInfo/visualization-backend
   
 # Notes
