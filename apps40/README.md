@@ -291,17 +291,6 @@ code.
 - [Full-length recording of presentation - Director Cut](https://globaleventcdn.blob.core.windows.net/assets/apps/apps40/directors-cut.mp4)
 - [Demo Instructions](https://github.com/microsoft/ignite-learning-paths-training-apps/tree/master/apps40)
 
-## Become a Trained Presenter
-
-To become a trained presenter, contact [scalablecontent@microsoft.com](mailto:scalablecontent@microsoft.com). In your email please include:
-
-- Complete name:
-- The code of this presentation: mod10
-- Link (ex: unlisted YouTube video) to a video of you presenting (~10 minutes).
-  > It doesn't need to be this content, the important is to show your presenter skills
-
-A mentor will get back to you with the information on the process.
-
 ## Trained Presenters
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):

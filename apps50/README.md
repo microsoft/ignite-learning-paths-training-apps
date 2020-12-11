@@ -42,17 +42,6 @@ code.
 - [Demo Guide Index](./demo-scripts/demo-guide.md)
 
 
-## Become a Trained Presenter
-
-To become a *Trained Presenter*, contact [scalablecontent@microsoft.com](mailto:scalablecontent@microsoft.com). In your email please include:
-
-- Complete name:
-- The code of this presentation: \<Session Code (ex:apps50)\>
-- Link (ex: unlisted YouTube video) to a video of you presenting (~10 minutes).
-
-> It doesn't need to be this content, the important is to show your presenter skills
-
-
 ## Trained Presenters
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):

@@ -87,17 +87,6 @@ Detailed explanations of each demonstration associated with this presentation ca
 |  [3 - Securing the app with Azure Key Vault](demos/README.md#demo-3---securing-the-app-with-azure-key-vault) | ?       | [Link](https://globaleventcdn.blob.core.windows.net/assets/apps/apps10/APPS10_demo3.mp4)
 |  [4 - Quick look at the Tailwind Traders App](demos/README.md#demo-4---quick-look-at-the-tailwind-traders-app) | ?       | [Link](https://globaleventcdn.blob.core.windows.net/assets/apps/apps10/APPS10_demo4.mp4)
 
-## Become a Trained Presenter
-
-To become a trained presenter, contact [learningpathmanager@microsoft.com](mailto:learningpathmanager@microsoft.com). In your email please include:
-
-- Complete name:
-- The code of this presentation: apps10
-- Link (ex: unlisted YouTube video) to a video of you presenting (~10 minutes). 
-  > It doesn't need to be this content, the important is to show your presenter skills
-
-A mentor will get back to you with the information on the process.
-
 ## Trained Presenters
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->

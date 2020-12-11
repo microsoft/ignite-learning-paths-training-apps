@@ -321,17 +321,6 @@ A rough demo workflow looks like this:
 12. Start talking about how while that was pretty easy to get up and running, there were a lot of moving parts. Explain how it can get overwhelming remembering all those steps. Ask the audience, "Wouldn't it be nice if we could truly modernize this and have a way to automate every step? Turns out there is." Segway into GitHub Actions and show them the completed GitHub Actions workflow with all 3 jobs. Explain the value behind true modernization by gaining deployment flexibility and repeatable builds - including the underlying infrastructure needed for the app to run.
 13. Delete live demo resource group when finished.
 
-## Become a Trained Presenter
-
-To become a trained presenter, contact [scalablecontent@microsoft.com](mailto:scalablecontent@microsoft.com). In your email please include:
-
-- Complete name:
-- The code of this presentation: apps30
-- Link (ex: unlisted YouTube video) to a video of you presenting (~10 minutes). 
-  > It doesn't need to be this content, the important is to show your presenter skills
-
-A mentor will get back to you with the information on the process.
-
 ## Trained Presenters
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
